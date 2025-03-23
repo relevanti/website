@@ -2,6 +2,13 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  box-sizing: border-box; /* Чтобы padding и border не влияли на размеры элементов */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; /* Применяем box-sizing ко всем элементам */
 }
 
 .container {
@@ -16,40 +23,42 @@ html, body {
   font-weight: bold;
   padding: 10px;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
+  /* align-items: center;  */
 }
-
 .events {
-  width: 100%;
+  width: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .box {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   justify-content: space-between;
-  width: 90%;
-
-  gap: 20px; 
+  width: 100%;
+  gap: 20px;
+  position: relative;
+  max-width: 1200px; /* Ограничиваем максимальную ширину */
+  margin: 0 auto;
 }
 
-/*Деление блоков по 2 активности в строке*/
+/* Делаем блоки более гибкими */
 .box > div {
-  flex: 1 0 calc(40% - 10px);
+  flex: 1 1 calc(45% - 10px); /* Убираем жесткие ограничения, делаем гибкими */
   padding: 20px;
   text-align: center;
-  height: 195px;
+  height: auto; /* Позволяем блокам адаптироваться по высоте */
   position: relative;
 }
-
 
 /* Линия под блоками */
 .box > div::after {
   content: "";
   position: absolute;
-  bottom: -10px; 
+  bottom: -10px;
   left: 2%;
   width: 95%;
   height: 1px;
@@ -61,84 +70,109 @@ html, body {
   content: none;
 }
 
-
-
-/* Вертикальная линия слева*/
+/* Вертикальная линия слева */
 .box::before {
   content: "";
   position: absolute;
-  left: 27%; 
-  height: 100%;
+  left: 0%;
+  top: 0%; /* Линия начинает от верхней части блока */
+  height: 100%; /* Линия будет растягиваться на 100% высоты родительского блока */
   width: 1px;
   background-color: rgba(66, 61, 61, 0.259);
 }
 
-/*Вертикальня линия справа*/
+/* Вертикальная линия справа */
 .box::after {
   content: "";
   position: absolute;
-  left: 62%; 
-  height: 100%;
+  left: 50%;
+  top: 0%; /* Линия начинает от верхней части блока */
+  height: 100%; /* Линия будет растягиваться на 100% высоты родительского блока */
   width: 1px;
   background-color: rgba(66, 61, 61, 0.259);
 }
-
-
-.status-planned{
+.status-planned,
+.status-active,
+.status-recruiting {
   width: 100px;
-  margin-left:-10px;
-  margin-top:-10px;
+  margin-left: -10px;
+  margin-top: -17px;
   height: 25px;
   border-radius: 10%;
   font-weight: bold;
   font-size: 12px;
-  background-color: #d8dbd835;
-  color:rgba(241, 55, 55, 0.845)
+  position: absolute;
 }
 
-.status-active{
-  width: 100px;
-  margin-left:-10px;
-  margin-top:-10px;
-  height: 25px;
-  border-radius: 10%;
-  font-weight: bold;
-  font-size: 12px;
+.status-planned {
   background-color: #d8dbd835;
-  color:rgba(89, 244, 38, 0.882)
+  color: rgba(241, 55, 55, 0.845);
 }
 
-.status-recruiting{
-  width: 100px;
-  margin-left:-10px;
-  margin-top:-10px;
-  height: 25px;
-  border-radius: 10%;
-  font-weight: bold;  
-  font-size: 12px;
+.status-active {
   background-color: #d8dbd835;
-  color:rgba(49, 66, 248, 0.855)
+  color: rgba(89, 244, 38, 0.882);
 }
 
-.title{
+.status-recruiting {
+  background-color: #d8dbd835;
+  color: rgba(49, 66, 248, 0.855);
+}
+
+.title {
   font-weight: bold;
   font-size: 20px;
 }
 
 .description {
   font-size: 18px;
-  max-width: 80%; /* Ограничивает текст до половины блока */
-  word-wrap: break-word; 
+  max-width: 80%;
+  word-wrap: break-word;
   font-weight: 300;
   text-align: left;
-  white-space: normal; /* Это гарантирует, что текст будет переноситься */
+  white-space: normal;
 }
 
 .regularity {
   font-size: 18px;
-  max-width: 80%; 
-  word-wrap: break-word; 
+  max-width: 80%;
+  word-wrap: break-word;
   font-weight: 500;
   text-align: left;
-  white-space: normal; 
+  white-space: normal;
+}
+
+/* Медиазапросы для адаптации */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%; /* Боковая панель будет занимать всю ширину */
+  }
+
+  .events {
+    width: 100%; /* Блок событий тоже будет занимать всю ширину */
+  }
+
+  .box > div {
+    flex: 1 1 100%; /* Каждый блок будет занимать всю ширину */
+  }
+
+  .box {
+    flex-direction: column; /* Блоки будут располагаться вертикально */
+  }
+}
+
+/* Адаптивные стили для вертикальных линий */
+@media (max-width: 768px) {
+  .box::before,
+  .box::after {
+    height: 50%; /* Уменьшаем высоту вертикальных линий на маленьких экранах */
+  }
+}
+
+/* Адаптивные стили для горизонтальных линий */
+@media (max-width: 768px) {
+  .box > div::after {
+    height: 1px; /* На маленьких экранах линии остаются тонкими */
+    width: 100%; /* Линия растягивается на всю ширину блока */
+  }
 }
