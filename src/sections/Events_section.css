@@ -1,15 +1,4 @@
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; /* Чтобы padding и border не влияли на размеры элементов */
-}
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit; /* Применяем box-sizing ко всем элементам */
-}
 
 .container {
   display: flex;
