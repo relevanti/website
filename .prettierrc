@@ -1,0 +1,19 @@
+{
+    "semi": false,
+    "singleQuote": false,
+    "trailingComma": "es5",
+    "endOfLine": "auto",
+    "plugins": ["prettier-plugin-import-sort"],
+    "importOrder": [
+      "^react",
+      "^@?\\w",
+      "^@/components/(.*)$",
+      "^@/hooks/(.*)$",
+      "^@/utils/(.*)$",
+      "^@/context/(.*)$",
+      "^@/sections/(.*)$",
+      "^[./]"
+    ],
+    "importOrderSeparation": true,
+    "importOrderSortSpecifiers": true  
+  }
