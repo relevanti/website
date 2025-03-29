@@ -1,0 +1,87 @@
+
+.footerBlock {
+    background-image: url("../assets/background-footer.png"); /* Исправлен путь к изображению */
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    max-width: 100%;
+  }
+
+  #root {
+    width: 100%;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-gap: 10px;
+    width: 100%;
+    margin: 300px;
+    height: 100vh;
+    padding: 20px;
+    align-items: start;
+    justify-items: start;
+  }
+  
+  .heroSection {
+    text-align: left;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .title {
+    width: 276px;
+    height: 55px;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-family: Avenir Next Demibold, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    padding-top: 60px;
+  }
+  
+  .description {
+    width: 573px;
+    height: 33px;
+    font-size: 23px;
+    font-weight: 400;
+    font-family: Avenir Next Cyr Regular, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .button {
+    background-color: rgb(255, 255, 255);
+    font-size: 32px;
+    font-weight: 600;
+    font-family: Avenir Next Demibold, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    text-align: center;
+    width: 573px;
+    height: 70px;
+    color: #1D2633;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 40px;
+  }
+  
+  .button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .titldesc {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+

@@ -1,0 +1,131 @@
+.footer {
+  height: 100%;
+  color: #FFF;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: auto;
+  margin: 0 300px;
+}
+
+.logoSection {
+  text-align: left;
+  font-size: 24px;
+  font-family: Avenir Next Cyr, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  margin-bottom: 75px;
+}
+
+.logoAndSpan {
+  display: flex;
+  align-items: center;
+}
+
+.logoSection span {
+  padding-left: 6px;
+  
+}
+
+
+.logo {
+  width: 60px;
+  height: 43.5px;
+
+}
+
+.logoText {
+  color: #F0F4F6;
+}
+
+p {
+  font-family: Avenir Next Cyr Regular, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.linksSection {
+  display: flex;
+}
+
+
+.column a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.contactSection {
+  text-align: right;
+  font-family: Avenir Next Cyr Regular, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  margin-bottom: 70px;
+}
+
+.contactSection a {
+  color: white;
+  text-decoration: none;
+}
+
+.community {
+  width: 140px;
+  height: 20px;
+  padding-bottom: 30px;
+  margin-right: 80px;
+  margin-left: 110px;
+}
+
+.strategy {
+  width: 99px;
+  height: 25px;
+  margin-left: 130px;
+  margin-bottom: 80px;
+}
+
+.partnership {
+  width: 126px;
+  height: 25px;
+  margin-bottom: 30px;
+}
+
+.faq {
+  width: 42px;
+  height: 25px;
+  margin-bottom: 75px;
+  padding-left: 40px;
+}
+
+.join {
+  width: 86px;
+  height: 25px;
+  margin-left: 100px;
+  margin-top: 30px;
+  color: #FFF
+}
+
+.logoSection p {
+  width: 320px;
+  height: 27px;
+  font-size: 20px;
+  margin-top: 22px;
+}
+
+.telegram {
+  width: 191px;
+  height: 27px;
+  margin-bottom: 20px;
+  margin-left: 95px;
+}
+
+.mail {
+  width: 199px;
+  height: 27px;
+  text-decoration: underline;
+  margin-left: 95px;
+}
+
+a {
+  color: #fff
+}

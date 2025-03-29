@@ -1,8 +1,36 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@font-face {
+  font-family: 'Avenir Next Cyr Regular';
+  src: url("src/fonts/avenirnextcyr-regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next Demibold';
+  src: url("src/fonts/avenir-next-demibold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next Cyr';
+  src: url("src/fonts/ofont.ru_Avenir Next.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next Cyr Bold';
+  src: url("src/fonts/avenirnextcyr-bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container2 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: 0 300px;
 }
 
 .logo {
@@ -11,9 +39,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -22,6 +52,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -39,4 +70,59 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.footer-block {
+  background-image: url("assets/background-footer.png");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-end;
+  max-width: 100%;
+}
+
+.App {
+  height: 100%;
+}
+
+body,
+html,
+#root,
+.footer-block,
+.App,
+.HeroSection,
+.Footer {
+  width: 1920px;
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  max-width: 100%;
+  font-family: Avenir Next Cyr;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* Одна колонка */
+  grid-template-rows: auto auto auto;
+  /* Автоматическая высота для каждой строки */
+  grid-gap: 10px;
+  /* Отступ между элементами */
+  width: 100%;
+  margin: 300px;
+  height: 100vh;
+  padding: 20px;
+  align-items: start;
+  /* Размещаем элементы в начале ячейки */
+  justify-items: start;
+  /* Выравниваем элементы по левому краю ячейки */
+}
+
+.heading {
+  font-size: 2em;
+  color: white;
 }
