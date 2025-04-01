@@ -1,0 +1,64 @@
+.thin-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.thin-menu-header.scrolled {
+  background-color: #1d2633;
+  height: 5vh;
+}
+
+.thin-menu-header:not(.scrolled) {
+  background-color: transparent;
+  height: 6vh;
+}
+
+.thin-menu-header .center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+}
+
+.thin-menu-header .left,
+.thin-menu-header .right {
+  display: flex;
+  gap: 20px;
+  flex: 0 0 auto;
+  padding: 0 0;
+}
+
+.thin-menu-header .logo-image {
+  width: 48px;
+  height: auto;
+  margin-top: 5px;
+  filter: brightness(7) saturate(0);
+  z-index: 1001;
+}
+
+.thin-menu-header .logo-text {
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  font-family: "AvenirNextCyr", sans-serif;
+  z-index: 1001;
+}
+
+.thin-menu-header:not(.scrolled) .logo-image,
+.thin-menu-header:not(.scrolled) .logo-text {
+  display: none;
+}
+
+.thin-menu-header.scrolled .logo-image,
+.thin-menu-header.scrolled .logo-text {
+  display: block;
+}
