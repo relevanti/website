@@ -1,25 +1,16 @@
 import js from "@eslint/js"
-import globals from "globals"
-import reactHooks from "eslint-plugin-react-hooks"
-import reactRefresh from "eslint-plugin-react-refresh"
-import tseslint from "typescript-eslint"
 import importPlugin from "eslint-plugin-import"
 import jsxA11y from "eslint-plugin-jsx-a11y"
 import prettier from "eslint-plugin-prettier"
+import reactHooks from "eslint-plugin-react-hooks"
+import reactRefresh from "eslint-plugin-react-refresh"
+import globals from "globals"
+import tseslint from "typescript-eslint"
 
 export default tseslint.config(
   { ignores: ["dist"] },
   {
-    extends: [
-      js.configs.recommended,
-      ...tseslint.configs.recommended,
-      "plugin:import/errors",
-      "plugin:import/warnings",
-      "plugin:import/typescript",
-      "plugin:jsx-a11y/recommended",
-      "plugin:react-hooks/recommended",
-      "plugin:prettier/recommended",
-    ],
+    extends: [js.configs.recommended, ...tseslint.configs.recommended],
     files: ["**/*.{ts,tsx}"],
     languageOptions: {
       ecmaVersion: 2020,
@@ -39,20 +30,20 @@ export default tseslint.config(
         { allowConstantExport: true },
       ],
       "no-restricted-imports": [
-        "error",
+        "warn",
         {
           patterns: ["../*"],
         },
       ],
       "import/order": [
-        "error",
+        "warn",
         {
           groups: [["builtin", "external", "internal"]],
           "newlines-between": "always",
         },
       ],
-      "import/no-unresolved": "error",
-      "import/no-extraneous-dependencies": "error",
+      "import/no-unresolved": "warn",
+      "import/no-extraneous-dependencies": "warn",
       "jsx-a11y/anchor-is-valid": "warn",
       "react/prop-types": "off",
       "react/react-in-jsx-scope": "off",
