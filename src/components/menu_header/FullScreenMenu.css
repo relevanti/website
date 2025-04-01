@@ -14,7 +14,7 @@
   transform: translateY(-20px); /* Start slightly above */
   transition:
     opacity 0.3s ease,
-    transform 0.3s ease; /* Animate opacity and transform */
+    transform 0.3s ease;
 }
 
 .full-screen-menu.open {
@@ -49,18 +49,18 @@
   font-family: "AvenirNextCyr", sans-serif;
   font-weight: 600;
   padding: 0.3rem 2.5rem;
-  position: relative; /* Position relative for pseudo-element */
+  position: relative;
 }
 
 .join-button-container {
   margin-top: 10em;
   display: flex;
   flex-direction: row;
-  justify-content: center; /* Center the buttons horizontally */
-  align-items: center; /* Align buttons vertically */
-  gap: 4rem; /* Space between buttons */
-  width: 100%; /* Ensure container takes full width */
-  max-width: 400px; /* Optional: limit the max width for better control */
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  width: 100%;
+  max-width: 400px;
   font-family: "AvenirNextCyr", sans-serif;
   font-weight: 600;
 }

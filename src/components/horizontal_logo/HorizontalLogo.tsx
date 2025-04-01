@@ -4,7 +4,7 @@ import React from "react"
 
 interface HorizontalLogoProps {
   expand: boolean
-  size: number // Size in pixels for the logo image width
+  size: number
 }
 
 const HorizontalLogo: React.FC<HorizontalLogoProps> = ({ expand, size }) => {

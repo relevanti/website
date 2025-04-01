@@ -11,7 +11,7 @@ const Header: React.FC = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY
-      const firstSectionHeight = window.innerHeight // Assuming first section is full screen height
+      const firstSectionHeight = window.innerHeight
       setIsScrolled(scrollPosition > firstSectionHeight / 2)
     }
 
