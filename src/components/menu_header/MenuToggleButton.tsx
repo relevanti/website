@@ -15,7 +15,9 @@ const MenuToggleButton: React.FC<MenuToggleButtonProps> = ({
 }) => {
   return (
     <button className={`menu-toggle-button ${className}`} onClick={onClick}>
-      {isOpen ? "✕" : "☰"}
+      <div className={`line top ${isOpen ? "open" : ""}`}></div>
+      <div className={`line middle ${isOpen ? "open" : ""}`}></div>
+      <div className={`line bottom ${isOpen ? "open" : ""}`}></div>
     </button>
   )
 }

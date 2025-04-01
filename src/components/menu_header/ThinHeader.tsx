@@ -26,11 +26,7 @@ const ThinHeader: React.FC<ThinHeaderProps> = ({ isScrolled }) => {
         className="logo-image left"
       />
       <span className="logo-text center">RELEVANTI</span>
-      <MenuToggleButton
-        isOpen={menuOpen}
-        onClick={toggleMenu}
-        className="right"
-      />
+      <MenuToggleButton isOpen={menuOpen} onClick={toggleMenu} />
       <FullScreenMenu isOpen={menuOpen} onClose={toggleMenu} />
     </header>
   )
