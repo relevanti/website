@@ -1,0 +1,123 @@
+.menu-header.scrolled {
+  background-color: #1d2633;
+  height: 6vh;
+}
+
+.menu-header:not(.scrolled) {
+  background-color: transparent;
+  height: 8vh;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  font-family: "AvenirNextCyr", sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 54px;
+  height: auto;
+  margin-right: 8px;
+  margin-left: 10px;
+  margin-top: 5px;
+  filter: brightness(7) saturate(0);
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.left,
+.right {
+  display: flex;
+  gap: 16px;
+  flex: 0 0 auto;
+  padding: 0 2rem;
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.center-menu {
+  display: flex;
+  gap: 20px;
+}
+.right-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu-header:not(.scrolled) .center-menu a,
+.menu-header:not(.scrolled) .right-menu a {
+  color: white;
+}
+
+.menu-header.scrolled .center-menu a,
+.menu-header.scrolled .right-menu a {
+  color: #c9c9c9;
+}
+
+.center-menu a,
+.right-menu a {
+  text-decoration: none;
+  padding: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "AvenirNextCyr", sans-serif;
+  font-weight: 600;
+}
+
+.right-menu .join-button {
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 0 1.5rem;
+  color: #1d2633 !important;
+}
+
+.enroll-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.hamburger-menu {
+  display: none;
+  background-color: transparent;
+  border: none;
+  font-size: 2.4rem;
+  color: white;
+  cursor: pointer;
+}
+
+.header.mobile .logo,
+.header.mobile .company-name {
+  display: none;
+}
+
+.header.mobile .hamburger-menu {
+  display: block;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
