@@ -25,7 +25,8 @@
 .full-screen-nav {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  margin-top: 10rem;
+  gap: 2rem;
 }
 
 .full-screen-nav a {
@@ -36,23 +37,30 @@
 }
 
 .full-screen-menu .join-button {
-  border-radius: 10px;
+  border-radius: 8px;
   background-color: #ffffff;
-  padding: 0.3rem 2rem;
-  color: #1d2633 !important;
+  padding: 0.3rem 2.5rem;
+  color: #1d2633;
 }
 
 .full-screen-menu .login-button {
   color: white;
   font-size: 20px;
   font-family: "AvenirNextCyr", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
+  padding: 0.3rem 2.5rem;
+  position: relative; /* Position relative for pseudo-element */
 }
 
 .join-button-container {
   margin-top: 10em;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  gap: 4em;
+  justify-content: center; /* Center the buttons horizontally */
+  align-items: center; /* Align buttons vertically */
+  gap: 4rem; /* Space between buttons */
+  width: 100%; /* Ensure container takes full width */
+  max-width: 400px; /* Optional: limit the max width for better control */
+  font-family: "AvenirNextCyr", sans-serif;
+  font-weight: 600;
 }
