@@ -1,0 +1,26 @@
+.horizontal-logo {
+  display: flex;
+  align-items: center;
+}
+
+.horizontal-logo.expand {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.horizontal-logo.tight {
+  justify-content: flex-start;
+}
+
+.horizontal-logo .logo-image {
+  height: auto;
+  margin-right: 8px;
+  filter: brightness(7) saturate(0);
+}
+
+.horizontal-logo .logo-text {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  font-family: "AvenirNextCyr", sans-serif;
+}

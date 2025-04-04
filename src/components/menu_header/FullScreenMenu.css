@@ -1,0 +1,66 @@
+.full-screen-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1d2633;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 900;
+  opacity: 0;
+  transform: translateY(-20px); /* Start slightly above */
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.full-screen-menu.open {
+  opacity: 1;
+  transform: translateY(0); /* Move into place */
+}
+
+.full-screen-nav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rem;
+  gap: 2rem;
+}
+
+.full-screen-nav a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.full-screen-menu .join-button {
+  border-radius: 8px;
+  background-color: #ffffff;
+  padding: 0.3rem 2.5rem;
+  color: #1d2633;
+}
+
+.full-screen-menu .login-button {
+  color: white;
+  font-size: 20px;
+  font-family: "AvenirNextCyr", sans-serif;
+  font-weight: 600;
+  padding: 0.3rem 2.5rem;
+  position: relative;
+}
+
+.join-button-container {
+  margin-top: 10em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  width: 100%;
+  max-width: 400px;
+  font-family: "AvenirNextCyr", sans-serif;
+  font-weight: 600;
+}
