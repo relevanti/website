@@ -1,0 +1,71 @@
+.wide-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.wide-menu-header.scrolled {
+  background-color: #1d2633;
+  height: 6vh;
+}
+
+.wide-menu-header:not(.scrolled) {
+  background-color: transparent;
+  height: 8vh;
+}
+
+.wide-menu-header .center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+}
+
+.wide-menu-header .left,
+.wide-menu-header .right {
+  display: flex;
+  gap: 20px;
+  flex: 0 0 auto;
+  padding: 0 2rem;
+}
+
+.wide-menu-header .item {
+  text-decoration: none;
+  padding: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "AvenirNextCyr", sans-serif;
+  font-weight: 600;
+}
+
+.wide-menu-header .join-button {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "AvenirNextCyr", sans-serif;
+  font-weight: 600;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 0 1.5rem;
+  color: #1d2633;
+}
+
+.wide-menu-header:not(.scrolled) .center .item,
+.wide-menu-header:not(.scrolled) .right .item {
+  color: white;
+}
+
+.wide-menu-header.scrolled .center .item,
+.wide-menu-header.scrolled .right .item {
+  color: #c9c9c9;
+}
