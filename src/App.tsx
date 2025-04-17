@@ -5,6 +5,7 @@ import React from "react"
 import Header from "./components/menu_header/Header"
 import { MobileProvider } from "./context/MobileContext"
 import FakeContent from "./sections/fake_content/FakeContent"
+import HowToJoin from "./sections/HowToJoin/HowToJoin"
 
 const App: React.FC = () => {
   return (
@@ -12,7 +13,9 @@ const App: React.FC = () => {
       <div>
         <Header />
         <FakeContent />
+        
       </div>
+      <HowToJoin />
     </MobileProvider>
   )
 }
