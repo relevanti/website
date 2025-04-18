@@ -16,12 +16,14 @@ const App: React.FC = () => {
     <MobileProvider>
       <div>
         <Header />
-        <FrontSection />
-        <AboutUs />
-        <AboutUsCards />
-        <EventsSection />
-        <ApplicationSection />
-        <FooterSection />
+        <div className="main-content">
+          <FrontSection />
+          <AboutUs />
+          <AboutUsCards />
+          <EventsSection />
+          <ApplicationSection />
+          <FooterSection />
+        </div>
       </div>
     </MobileProvider>
   )

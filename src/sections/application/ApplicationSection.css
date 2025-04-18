@@ -1,6 +1,6 @@
 .application-section {
-  padding: 40px 16%;
-  background-color: white;
+  padding: 5rem 5vw;
+  max-width: 70rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,8 +8,8 @@
 }
 
 .application-section .application-title {
-  font-size: 32px;
-  margin-bottom: 20px;
+  font-size: var(--font-size-xxl);
+  margin-bottom: 0.5em;
   font-family: "AvenirNextCyr", sans-serif;
   color: #333;
   text-align: left;
@@ -18,9 +18,8 @@
 .application-section .application-content {
   display: flex;
   justify-content: space-between;
-  max-width: 1200px;
   width: 100%;
-  gap: 20px;
+  gap: 4em;
   font-family: "AvenirNextCyr", sans-serif;
 }
 
@@ -30,7 +29,7 @@
 }
 
 .application-section .application-paragraph p {
-  font-size: 16px;
+  font-size: var(--font-size-sm);
   line-height: 1.5;
   color: #333;
 }
@@ -45,8 +44,8 @@
 }
 
 .application-section .application-details h2 {
-  font-size: 24px;
-  margin-top: 20px;
+  font-size: var(--font-size-l);
+  margin-top: 1em;
   font-weight: 600;
   font-family: "AvenirNextCyr", sans-serif;
   color: #333;
@@ -62,17 +61,19 @@
   background-color: #ccc;
   position: absolute;
   left: 0;
-  bottom: -10px;
+  bottom: -0.25em;
 }
 
 .application-section .application-details ol,
 .application-section .application-details ul {
-  margin: 20px 0;
-  padding-left: 20px;
+  margin: 0 0;
+  padding-left: 1.5em;
+  font-weight: 400;
+  font-family: "AvenirNext", sans-serif;
 }
 
 .application-section .application-details li {
-  font-size: 16px;
+  font-size: var(--font-size-sm);
   line-height: 1.5;
   color: #333;
 }
@@ -80,17 +81,16 @@
 /* Media query for mobile devices */
 @media (max-width: 768px) {
   .application-section {
-    padding: 40px 20px;
+    padding: 2rem 5vw;
   }
   .application-section .application-content {
     flex-direction: column;
     align-items: flex-start;
-    gap: 0px;
+    gap: 0;
   }
 
   .application-section .application-paragraph {
     width: 100%;
-    max-width: 600px;
-    margin-bottom: 20px;
+    margin-bottom: 1em;
   }
 }
