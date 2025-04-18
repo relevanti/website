@@ -6,7 +6,7 @@ const FooterSection: React.FC = () => {
   return (
     <section id="join" className="footer-section">
       <div className="enroll-section">
-        <h2 className="footer-header">Мы ждали тебя</h2>
+        <h2 className="footer-header">Мы искали тебя</h2>
         <p className="footer-paragraph">
           1. Заполни форму по ссылке
           <br />

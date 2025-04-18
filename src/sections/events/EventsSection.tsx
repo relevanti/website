@@ -2,10 +2,10 @@ import "./EventsSection.css"
 
 import EventItem from "./EventItem"
 
-type EventStatus = "В планах" | "Действует" | "Идет набор"
+type EventStatus = "Летом" | "Действует" | "Идет набор"
 
 const statusClassMap: Record<EventStatus, string> = {
-  "В планах": "planned",
+  Летом: "planned",
   Действует: "active",
   "Идет набор": "recruiting",
 }
@@ -69,7 +69,7 @@ const eventsData: Event[] = [
     regularity: "Онлайн встречи 1 раз в неделю",
   },
   {
-    status: "В планах",
+    status: "Летом",
     title: "Сборы",
     description:
       "Собираемся вместе для реализации краткосрочного проекта. Например, поучаствовать в хакатоне или сходить в поход. ",
