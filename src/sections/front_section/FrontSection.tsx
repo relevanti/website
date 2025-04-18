@@ -14,7 +14,7 @@ const FrontSection: React.FC = () => {
         <a href="/#join" className="join-button">
           Вступить
         </a>
-        <p className="main-points">финансы • здоровье • люди</p>
+        <p className="main-points">финансы • здоровье • сообщество</p>
       </div>
     </section>
   )

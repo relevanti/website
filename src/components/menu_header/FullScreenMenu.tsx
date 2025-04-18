@@ -11,21 +11,21 @@ const FullScreenMenu: React.FC<FullScreenMenuProps> = ({ isOpen, onClose }) => {
   return (
     <div className={`full-screen-menu ${isOpen ? "open" : ""}`}>
       <nav className="full-screen-nav">
-        <a href="/" className="menu-header-item" onClick={onClose}>
-          Главная
-        </a>
-        <a href="/community" className="menu-header-item" onClick={onClose}>
-          Сообщество
-        </a>
-        <a href="/strategy" className="menu-header-item" onClick={onClose}>
-          Стратегия
-        </a>
-        <a href="/faq" className="menu-header-item" onClick={onClose}>
-          FAQ
-        </a>
-        <a href="/partnership" className="menu-header-item" onClick={onClose}>
-          Партнерство
-        </a>
+        {/*<a href="/" className="menu-header-item" onClick={onClose}>*/}
+        {/*  Главная*/}
+        {/*</a>*/}
+        {/*<a href="/community" className="menu-header-item" onClick={onClose}>*/}
+        {/*  Сообщество*/}
+        {/*</a>*/}
+        {/*<a href="/strategy" className="menu-header-item" onClick={onClose}>*/}
+        {/*  Стратегия*/}
+        {/*</a>*/}
+        {/*<a href="/faq" className="menu-header-item" onClick={onClose}>*/}
+        {/*  FAQ*/}
+        {/*</a>*/}
+        {/*<a href="/partnership" className="menu-header-item" onClick={onClose}>*/}
+        {/*  Партнерство*/}
+        {/*</a>*/}
 
         <div className="join-button-container">
           <a

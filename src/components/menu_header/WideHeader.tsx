@@ -14,23 +14,23 @@ const WideHeader: React.FC<WideHeaderProps> = ({ isScrolled }) => {
         <HorizontalLogo expand={false} size={54} />
       </div>
       <nav className="center">
-        <a href="/" className="item">
-          Главная
-        </a>
-        <a href="/community" className="item">
-          Сообщество
-        </a>
-        <a href="/strategy" className="item">
-          Стратегия
-        </a>
-        <a href="/faq" className="item">
-          FAQ
-        </a>
+        {/*<a href="/" className="item">*/}
+        {/*  Главная*/}
+        {/*</a>*/}
+        {/*<a href="/community" className="item">*/}
+        {/*  Сообщество*/}
+        {/*</a>*/}
+        {/*<a href="/strategy" className="item">*/}
+        {/*  Стратегия*/}
+        {/*</a>*/}
+        {/*<a href="/faq" className="item">*/}
+        {/*  FAQ*/}
+        {/*</a>*/}
       </nav>
       <nav className="right">
-        <a href="/partnership" className="item">
-          Партнерство
-        </a>
+        {/*<a href="/partnership" className="item">*/}
+        {/*  Партнерство*/}
+        {/*</a>*/}
         <a href="/#join" className="join-button">
           Вступить
         </a>
