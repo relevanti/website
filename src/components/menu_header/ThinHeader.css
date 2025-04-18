@@ -5,7 +5,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
   z-index: 1000;
   padding: 0 1rem;
   box-sizing: border-box;
@@ -36,9 +36,9 @@
 }
 
 .thin-menu-header .logo-image {
-  width: 3rem;
-  height: auto;
-  margin-top: 0.25em;
+  width: auto;
+  height: 4.5vh;
+  margin-top: 0.2vh;
   filter: brightness(7) saturate(0);
   z-index: 1001;
 }

@@ -8,7 +8,7 @@
   border: none;
   cursor: pointer;
   position: fixed;
-  top: 1em;
+  top: calc((5vh - 1.75em) / 2);
   right: 1em;
   z-index: 1003;
 }
@@ -35,7 +35,7 @@
 }
 
 .menu-toggle-button .line.open.top {
-  transform: translate(0px, 0.7em) rotate(855deg);
+  transform: translate(0px, 0.75em) rotate(855deg);
 }
 
 .menu-toggle-button .line.open.middle {
@@ -43,5 +43,5 @@
 }
 
 .menu-toggle-button .line.open.bottom {
-  transform: translate(0px, -0.7em) rotate(-135deg);
+  transform: translate(0px, -0.75em) rotate(-135deg);
 }
