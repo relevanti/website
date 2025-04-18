@@ -1,7 +1,6 @@
+import useIsMobile from "@/hooks/useIsMobile"
 import * as React from "react"
 import { ReactNode, createContext, useContext } from "react"
-
-import useIsMobile from "../hooks/useIsMobile"
 
 const MobileContext = createContext<boolean>(false)
 
