@@ -1,18 +1,20 @@
-import './Events_section.css';
-import React from 'react';
-type EventStatus = "В планах" | "Действует" | "Идет набор";
+import "./EventsSection.css"
+
+import EventItem from "./EventItem"
+
+type EventStatus = "В планах" | "Действует" | "Идет набор"
 
 const statusClassMap: Record<EventStatus, string> = {
   "В планах": "planned",
-  "Действует": "active",
-  "Идет набор": "recruiting"
-};
+  Действует: "active",
+  "Идет набор": "recruiting",
+}
 
 interface Event {
-  status: EventStatus;
-  title: string;
-  description: string;
-  regularity: string;
+  status: EventStatus
+  title: string
+  description: string
+  regularity: string
 }
 
 const eventsData: Event[] = [
@@ -21,9 +23,9 @@ const eventsData: Event[] = [
     title: "Мастермайнд-группа",
     description:
       "Строго модерируемые встречи, направленные на преодоление текущих затруднений.",
-    regularity: "Ежедневные короткие звонки \n(около 5-15 мин)",
-  }
-  ,{
+    regularity: "Ежедневные короткие звонки \n(до 15 мин)",
+  },
+  {
     status: "Идет набор",
     title: "Книжный клуб",
     description:
@@ -41,7 +43,8 @@ const eventsData: Event[] = [
   {
     status: "Идет набор",
     title: "Прикладное программирование",
-    description: "Основы fullstack разработки. Начало с теории и frontend. JavaScript, React, NodeJS. \nОриентир на трудоустройство.",
+    description:
+      "Основы fullstack разработки. Начало с теории и frontend. JavaScript, React, NodeJS. \nОриентир на трудоустройство.",
     regularity: "Ежедневное взаимообучение",
   },
   {
@@ -70,44 +73,28 @@ const eventsData: Event[] = [
     title: "Сборы",
     description:
       "Собираемся вместе для реализации краткосрочного проекта. Например, поучаствовать в хакатоне или сходить в поход. ",
-    regularity: "2-4 дня без работы, или до 2 недель, совмещая с работой. \nОколо 2 раз в год",
+    regularity:
+      "2-4 дня без работы, или до 2 недель, совмещая с работой. \nОколо 2 раз в год",
   },
-];
+]
 
-
-// Функция для преобразования \n в <br />
-const formatText = (text: string) => {
-  return text.split('\n').map((str, index) => (
-    <React.Fragment key={index}>
-      {str}
-      <br />
-    </React.Fragment>
-  ));
-};
-
-function Events_section() {
+function EventsSection() {
   return (
-    <div className="container">
+    <div className="events-container">
       <div className="sidebar">Наши события</div>
       <div className="events">
         <div className="box">
           {eventsData.map((event, index) => (
-            <div key={index}>
-              <div className={`status-${statusClassMap[event.status]}`}>
-                {event.status}
-              </div>
-              <div className="title">{event.title}</div><br />
-              <div className="description">
-                {formatText(event.description)}
-              </div><br   />  
-              <div className="regularity">{event.regularity}</div>
-            </div>
+            <EventItem
+              key={index}
+              event={event}
+              statusClass={statusClassMap[event.status]}
+            />
           ))}
         </div>
       </div>
     </div>
-  );
-
+  )
 }
 
-export default Events_section;
+export default EventsSection
