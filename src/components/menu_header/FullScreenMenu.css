@@ -15,11 +15,13 @@
   transition:
     opacity 0.3s ease,
     transform 0.3s ease;
+  pointer-events: none; /* Prevent clicks when closed */
 }
 
 .full-screen-menu.open {
   opacity: 1;
   transform: translateY(0); /* Move into place */
+  pointer-events: auto; /* Allow clicks when open */
 }
 
 .full-screen-nav {
