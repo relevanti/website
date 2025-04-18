@@ -5,12 +5,14 @@ import React from "react"
 import Header from "./components/menu_header/Header"
 import { MobileProvider } from "./context/MobileContext"
 import FakeContent from "./sections/fake_content/FakeContent"
+import FrontSection from "./sections/front_section/FrontSection"
 
 const App: React.FC = () => {
   return (
     <MobileProvider>
       <div>
         <Header />
+        <FrontSection />
         <FakeContent />
       </div>
     </MobileProvider>

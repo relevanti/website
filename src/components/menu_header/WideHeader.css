@@ -18,7 +18,7 @@
 
 .wide-menu-header:not(.scrolled) {
   background-color: transparent;
-  height: 8vh;
+  height: 10vh;
 }
 
 .wide-menu-header .center {
@@ -62,7 +62,7 @@
 
 .wide-menu-header:not(.scrolled) .center .item,
 .wide-menu-header:not(.scrolled) .right .item {
-  color: white;
+  color: #c9c9c9;
 }
 
 .wide-menu-header.scrolled .center .item,
