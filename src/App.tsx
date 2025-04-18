@@ -7,6 +7,7 @@ import Header from "./components/menu_header/Header"
 import { MobileProvider } from "./context/MobileContext"
 import AboutUsCards from "./sections/about_us_cards/AboutUsCards"
 import AboutUs from "./sections/about_us/AboutUs"
+import ApplicationSection from "./sections/application/ApplicationSection"
 import FooterSection from "./sections/footer/FooterSection"
 import FrontSection from "./sections/front_section/FrontSection"
 
@@ -19,6 +20,7 @@ const App: React.FC = () => {
         <AboutUs />
         <AboutUsCards />
         <EventsSection />
+        <ApplicationSection />
         <FooterSection />
       </div>
     </MobileProvider>
