@@ -27,16 +27,15 @@
 .footer-section .footer-content {
   color: white;
   z-index: 2;
-  padding: 1em;
+  padding: 0 1em;
   width: 100%;
   position: relative;
 }
 
-.footer-section .footer-menu a {
-  color: white;
-  text-decoration: none;
-  font-size: var(--font-size-m);
-  font-family: "AvenirNextCyr", sans-serif;
+.footer-content p {
+  color: #bbb;
+  font-size: var(--font-size-xs);
+  font-family: "AvenirNext", sans-serif;
 }
 
 .footer-section .enroll-section {
