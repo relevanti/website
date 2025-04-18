@@ -2,28 +2,28 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 69rem;
   padding-top: 4rem;
   padding-left: 1rem;
   padding-right: 1rem;
   color: #1d2633;
-  background-color: white;
 }
 
 .about-us-content {
   flex: 1;
-  padding-right: 20px;
+  padding-right: 1em;
   text-align: left;
 }
 
 .about-us-content h2 {
-  font-size: 28px;
-  margin-bottom: 10px;
+  font-size: var(--font-size-xl);
+  margin-bottom: 0.5em;
   font-weight: 600;
   font-family: "AvenirNextCyr", sans-serif;
 }
 
 .about-us-content p {
-  font-size: 20px;
+  font-size: var(--font-size-m);
   line-height: 1.5;
   font-weight: 400;
   font-family: "AvenirNextCyr", sans-serif;
@@ -59,6 +59,7 @@
 
 @media (max-width: 768px) {
   .about-us {
+    padding-top: 2rem;
     flex-direction: column;
   }
 
@@ -72,12 +73,5 @@
     justify-content: center;
     align-items: center;
     order: -1;
-  }
-}
-
-@media (min-width: 1024px) {
-  .about-us {
-    padding-left: 16.6667%;
-    padding-right: 16.6667%;
   }
 }
