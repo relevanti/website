@@ -2,14 +2,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 40px;
-  height: 24px;
+  width: 3em;
+  height: 1.75em;
   background-color: transparent;
   border: none;
   cursor: pointer;
   position: fixed;
-  top: 1rem;
-  right: 1rem;
+  top: 1em;
+  right: 1em;
   z-index: 1003;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .menu-toggle-button .line.open.top {
-  transform: translate(0px, 10px) rotate(855deg);
+  transform: translate(0px, 0.7em) rotate(855deg);
 }
 
 .menu-toggle-button .line.open.middle {
@@ -43,5 +43,5 @@
 }
 
 .menu-toggle-button .line.open.bottom {
-  transform: translate(0px, -10px) rotate(-135deg);
+  transform: translate(0px, -0.7em) rotate(-135deg);
 }

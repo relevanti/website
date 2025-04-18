@@ -26,27 +26,25 @@
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 20px;
 }
 
 .thin-menu-header .left,
 .thin-menu-header .right {
   display: flex;
-  gap: 20px;
   flex: 0 0 auto;
   padding: 0 0;
 }
 
 .thin-menu-header .logo-image {
-  width: 48px;
+  width: 3rem;
   height: auto;
-  margin-top: 5px;
+  margin-top: 0.25em;
   filter: brightness(7) saturate(0);
   z-index: 1001;
 }
 
 .thin-menu-header .logo-text {
-  font-size: 22px;
+  font-size: var(--font-size-xl);
   font-weight: 400;
   letter-spacing: 0.02em;
   font-family: "AvenirNextCyr", sans-serif;
