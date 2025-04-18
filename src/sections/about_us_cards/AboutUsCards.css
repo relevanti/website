@@ -1,0 +1,64 @@
+.about-us-cards {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  background-color: white;
+}
+
+.about-us-card {
+  flex: 1;
+  background-color: #f0f0f0;
+  margin: 0 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-radius: 6px;
+  color: #1d2633;
+}
+
+.about-us-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-family: "AvenirNextCyr", sans-serif;
+  text-align: left;
+}
+
+.about-us-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.about-us-card p {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: "AvenirNextCyr", sans-serif;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .about-us-cards {
+    flex-direction: column;
+  }
+
+  .about-us-card img {
+    max-height: 200px;
+  }
+
+  .about-us-card {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-us-cards {
+    padding-left: 16.6667%;
+    padding-right: 16.6667%;
+  }
+}
