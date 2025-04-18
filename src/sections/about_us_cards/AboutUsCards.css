@@ -23,7 +23,7 @@
   font-size: var(--font-size-m);
   margin-bottom: 0.5em;
   font-weight: 600;
-  font-family: "AvenirNextCyr", sans-serif;
+  font-family: "ReneSansCyr", sans-serif;
   text-align: left;
 }
 
@@ -39,7 +39,7 @@
   font-size: var(--font-size-m);
   line-height: 1.3;
   font-weight: 400;
-  font-family: "AvenirNextCyr", sans-serif;
+  font-family: "ReneSansCyr", sans-serif;
   text-align: left;
 }
 

@@ -19,14 +19,14 @@
   font-size: var(--font-size-xl);
   margin-bottom: 0.5em;
   font-weight: 600;
-  font-family: "AvenirNextCyr", sans-serif;
+  font-family: "ReneSansCyr", sans-serif;
 }
 
 .about-us-content p {
   font-size: var(--font-size-m);
   line-height: 1.5;
   font-weight: 400;
-  font-family: "AvenirNextCyr", sans-serif;
+  font-family: "ReneSansCyr", sans-serif;
 }
 
 .about-us-content p strong {

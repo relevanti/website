@@ -35,7 +35,7 @@
 .footer-content p {
   color: #bbb;
   font-size: var(--font-size-xs);
-  font-family: "AvenirNext", sans-serif;
+  font-family: "ReneSans", sans-serif;
 }
 
 .footer-section .enroll-section {
@@ -59,20 +59,20 @@
   text-decoration: none;
   text-align: center;
   font-size: var(--font-size-l);
-  font-family: "AvenirNextCyr", sans-serif;
+  font-family: "ReneSansCyr", sans-serif;
   font-weight: 600;
   z-index: 3;
 }
 
 .footer-section .contact-details {
   font-size: var(--font-size-m);
-  font-family: "AvenirNextCyr", sans-serif;
+  font-family: "ReneSansCyr", sans-serif;
 }
 
 .footer-section .footer-header {
   color: white;
   font-size: var(--font-size-xl);
-  font-family: "AvenirNextCyr", sans-serif;
+  font-family: "ReneSansCyr", sans-serif;
   margin-bottom: 0;
   font-weight: 500;
   z-index: 2;
@@ -81,7 +81,7 @@
 .footer-section .footer-paragraph {
   color: white;
   font-size: var(--font-size-m);
-  font-family: "AvenirNextCyr", sans-serif;
+  font-family: "ReneSansCyr", sans-serif;
   margin-bottom: 1em;
   z-index: 2;
 }

@@ -1,230 +1,230 @@
 @font-face {
-  font-family: "AvenirNextCyr";
-  src: url("./AvenirNextCyr-Bold.woff2") format("woff2");
+  font-family: "ReneSansCyr";
+  src: url("./ReneSansCyr-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "AvenirNextCyr";
-  src: url("./AvenirNextCyr-BoldItalic.woff2") format("woff2");
+  font-family: "ReneSansCyr";
+  src: url("./ReneSansCyr-BoldItalic.woff2") format("woff2");
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "AvenirNextCyr";
-  src: url("./AvenirNextCyr-Demi.woff2") format("woff2");
+  font-family: "ReneSansCyr";
+  src: url("./ReneSansCyr-Demi.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "AvenirNextCyr";
-  src: url("./AvenirNextCyr-DemiItalic.woff2") format("woff2");
+  font-family: "ReneSansCyr";
+  src: url("./ReneSansCyr-DemiItalic.woff2") format("woff2");
   font-weight: 600;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "AvenirNextCyr";
-  src: url("./AvenirNextCyr-Heavy.woff2") format("woff2");
+  font-family: "ReneSansCyr";
+  src: url("./ReneSansCyr-Heavy.woff2") format("woff2");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "AvenirNextCyr";
-  src: url("./AvenirNextCyr-HeavyItalic.woff2") format("woff2");
+  font-family: "ReneSansCyr";
+  src: url("./ReneSansCyr-HeavyItalic.woff2") format("woff2");
   font-weight: 800;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "AvenirNextCyr";
-  src: url("./AvenirNextCyr-Italic.woff2") format("woff2");
+  font-family: "ReneSansCyr";
+  src: url("./ReneSansCyr-Italic.woff2") format("woff2");
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "AvenirNextCyr";
-  src: url("./AvenirNextCyr-Light.woff2") format("woff2");
+  font-family: "ReneSansCyr";
+  src: url("./ReneSansCyr-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "AvenirNextCyr";
-  src: url("./AvenirNextCyr-LightItalic.woff2") format("woff2");
+  font-family: "ReneSansCyr";
+  src: url("./ReneSansCyr-LightItalic.woff2") format("woff2");
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "AvenirNextCyr";
-  src: url("./AvenirNextCyr-Medium.woff2") format("woff2");
+  font-family: "ReneSansCyr";
+  src: url("./ReneSansCyr-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "AvenirNextCyr";
-  src: url("./AvenirNextCyr-MediumItalic.woff2") format("woff2");
+  font-family: "ReneSansCyr";
+  src: url("./ReneSansCyr-MediumItalic.woff2") format("woff2");
   font-weight: 500;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "AvenirNextCyr";
-  src: url("./AvenirNextCyr-Regular.woff2") format("woff2");
+  font-family: "ReneSansCyr";
+  src: url("./ReneSansCyr-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "AvenirNextCyr";
-  src: url("./AvenirNextCyr-Thin.woff2") format("woff2");
+  font-family: "ReneSansCyr";
+  src: url("./ReneSansCyr-Thin.woff2") format("woff2");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "AvenirNextCyr";
-  src: url("./AvenirNextCyr-ThinItalic.woff2") format("woff2");
+  font-family: "ReneSansCyr";
+  src: url("./ReneSansCyr-ThinItalic.woff2") format("woff2");
   font-weight: 100;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "AvenirNextCyr";
-  src: url("./AvenirNextCyr-UltraLight.woff2") format("woff2");
+  font-family: "ReneSansCyr";
+  src: url("./ReneSansCyr-UltraLight.woff2") format("woff2");
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "AvenirNextCyr";
-  src: url("./AvenirNextCyr-UltraLightIt.woff2") format("woff2");
+  font-family: "ReneSansCyr";
+  src: url("./ReneSansCyr-UltraLightIt.woff2") format("woff2");
   font-weight: 200;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "AvenirNext";
-  src: url("./AvenirNextLTPro-Bold.woff2") format("woff2");
+  font-family: "ReneSans";
+  src: url("./ReneSansLTPro-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "AvenirNext";
-  src: url("./AvenirNextLTPro-BoldCn.woff2") format("woff2");
+  font-family: "ReneSans";
+  src: url("./ReneSansLTPro-BoldCn.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "AvenirNext";
-  src: url("./AvenirNextLTPro-BoldCnIt.woff2") format("woff2");
+  font-family: "ReneSans";
+  src: url("./ReneSansLTPro-BoldCnIt.woff2") format("woff2");
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "AvenirNext";
-  src: url("./AvenirNextLTPro-Cn.woff2") format("woff2");
+  font-family: "ReneSans";
+  src: url("./ReneSansLTPro-Cn.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "AvenirNext";
-  src: url("./AvenirNextLTPro-CnIt.woff2") format("woff2");
+  font-family: "ReneSans";
+  src: url("./ReneSansLTPro-CnIt.woff2") format("woff2");
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "AvenirNext";
-  src: url("./AvenirNextLTPro-Demi.woff2") format("woff2");
+  font-family: "ReneSans";
+  src: url("./ReneSansLTPro-Demi.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "AvenirNext";
-  src: url("./AvenirNextLTPro-DemiCn.woff2") format("woff2");
+  font-family: "ReneSans";
+  src: url("./ReneSansLTPro-DemiCn.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "AvenirNext";
-  src: url("./AvenirNextLTPro-DemiCnIt.woff2") format("woff2");
+  font-family: "ReneSans";
+  src: url("./ReneSansLTPro-DemiCnIt.woff2") format("woff2");
   font-weight: 600;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "AvenirNext";
-  src: url("./AvenirNextLTPro-DemiIt.woff2") format("woff2");
+  font-family: "ReneSans";
+  src: url("./ReneSansLTPro-DemiIt.woff2") format("woff2");
   font-weight: 600;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "AvenirNext";
-  src: url("./AvenirNextLTPro-HeavyCn.woff2") format("woff2");
+  font-family: "ReneSans";
+  src: url("./ReneSansLTPro-HeavyCn.woff2") format("woff2");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "AvenirNext";
-  src: url("./AvenirNextLTPro-HeavyCnIt.woff2") format("woff2");
+  font-family: "ReneSans";
+  src: url("./ReneSansLTPro-HeavyCnIt.woff2") format("woff2");
   font-weight: 800;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "AvenirNext";
-  src: url("./AvenirNextLTPro-It.woff2") format("woff2");
+  font-family: "ReneSans";
+  src: url("./ReneSansLTPro-It.woff2") format("woff2");
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "AvenirNext";
-  src: url("./AvenirNextLTPro-MediumCn.woff2") format("woff2");
+  font-family: "ReneSans";
+  src: url("./ReneSansLTPro-MediumCn.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "AvenirNext";
-  src: url("./AvenirNextLTPro-MediumCnIt.woff2") format("woff2");
+  font-family: "ReneSans";
+  src: url("./ReneSansLTPro-MediumCnIt.woff2") format("woff2");
   font-weight: 500;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "AvenirNext";
-  src: url("./AvenirNextLTPro-Regular.woff2") format("woff2");
+  font-family: "ReneSans";
+  src: url("./ReneSansLTPro-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "AvenirNext";
-  src: url("./AvenirNextLTPro-UltLtCn.woff2") format("woff2");
+  font-family: "ReneSans";
+  src: url("./ReneSansLTPro-UltLtCn.woff2") format("woff2");
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "AvenirNext";
-  src: url("./AvenirNextLTPro-UltLtCnIt.woff2") format("woff2");
+  font-family: "ReneSans";
+  src: url("./ReneSansLTPro-UltLtCnIt.woff2") format("woff2");
   font-weight: 200;
   font-style: italic;
 }
