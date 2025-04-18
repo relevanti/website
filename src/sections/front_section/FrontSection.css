@@ -1,7 +1,7 @@
 .front-section {
   width: 100%;
   height: 100vh;
-  background-image: url("/public/images/hiking.jpg");
+  background-image: url("/images/hiking.jpg");
   background-size: cover;
   background-position: center;
   display: flex;

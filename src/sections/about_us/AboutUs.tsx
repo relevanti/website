@@ -17,7 +17,7 @@ const AboutUs: React.FC = () => {
           </strong>
         </p>
         <div className="about-us-photo-mobile">
-          <img src="/public/images/group_photo.png" alt="About Us" />
+          <img src="/images/group_photo.png" alt="About Us" />
         </div>
         <p>
           Вместе мы хотим достичь плато, на котором можно строить дальнейшую
@@ -27,7 +27,7 @@ const AboutUs: React.FC = () => {
         </p>
       </div>
       <div className="about-us-photo">
-        <img src="/public/images/group_photo.png" alt="About Us" />
+        <img src="/images/group_photo.png" alt="About Us" />
       </div>
     </div>
   )

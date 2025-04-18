@@ -6,7 +6,7 @@ const FrontSection: React.FC = () => {
   return (
     <section className="front-section">
       <div className="content">
-        <img src="/public/logo_no_text.svg" alt="Logo" className="logo-image" />
+        <img src="/logo_no_text.svg" alt="Logo" className="logo-image" />
         <p className="community-title">RELEVANTI</p>
         <p className="description">
           Клуб людей, вместе стремящихся <br /> прожить невероятную жизнь
