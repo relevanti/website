@@ -1,6 +1,6 @@
 import "./FrontSection.css"
 
-import React from "react"
+import * as React from "react"
 
 const FrontSection: React.FC = () => {
   return (

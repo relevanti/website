@@ -1,6 +1,6 @@
 import "./MenuToggleButton.css"
 
-import React from "react"
+import * as React from "react"
 
 interface MenuToggleButtonProps {
   isOpen: boolean

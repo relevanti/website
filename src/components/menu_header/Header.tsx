@@ -1,5 +1,6 @@
 import useIsMobile from "@/hooks/useIsMobile"
-import React, { useEffect, useState } from "react"
+import * as React from "react"
+import { useEffect, useState } from "react"
 
 import ThinHeader from "./ThinHeader"
 import WideHeader from "./WideHeader"

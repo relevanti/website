@@ -1,6 +1,6 @@
 import "./ApplicationSection.css"
 
-import React from "react"
+import * as React from "react"
 
 const ApplicationSection: React.FC = () => {
   return (

@@ -1,6 +1,6 @@
 import "./FullScreenMenu.css"
 
-import React from "react"
+import * as React from "react"
 
 interface FullScreenMenuProps {
   isOpen: boolean

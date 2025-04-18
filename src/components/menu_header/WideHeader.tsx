@@ -1,7 +1,7 @@
 import "./WideHeader.css"
 
 import HorizontalLogo from "@/components/horizontal_logo/HorizontalLogo"
-import React from "react"
+import * as React from "react"
 
 interface WideHeaderProps {
   isScrolled: boolean

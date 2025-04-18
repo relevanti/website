@@ -1,6 +1,7 @@
 import "./ThinHeader.css"
 
-import React, { useState } from "react"
+import * as React from "react"
+import { useState } from "react"
 
 import FullScreenMenu from "./FullScreenMenu"
 import MenuToggleButton from "./MenuToggleButton"

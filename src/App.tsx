@@ -1,7 +1,7 @@
 import "./App.css"
 
 import EventsSection from "@/sections/events/EventsSection"
-import React from "react"
+import * as React from "react"
 
 import Header from "./components/menu_header/Header"
 import { MobileProvider } from "./context/MobileContext"

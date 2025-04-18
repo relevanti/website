@@ -1,6 +1,6 @@
 import "./FakeContent.css" // Import CSS for styling
 
-import React from "react"
+import * as React from "react"
 
 const FakeContent: React.FC = () => {
   return (

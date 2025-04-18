@@ -1,19 +1,19 @@
-import React, { createContext, useContext, ReactNode } from 'react';
-import useIsMobile from '../hooks/useIsMobile';
+import * as React from "react"
+import { ReactNode, createContext, useContext } from "react"
 
-const MobileContext = createContext<boolean>(false);
+import useIsMobile from "../hooks/useIsMobile"
+
+const MobileContext = createContext<boolean>(false)
 
 interface MobileProviderProps {
-  children: ReactNode;
+  children: ReactNode
 }
 
 export const MobileProvider: React.FC<MobileProviderProps> = ({ children }) => {
-  const isMobile = useIsMobile();
+  const isMobile = useIsMobile()
   return (
-    <MobileContext.Provider value={isMobile}>
-      {children}
-    </MobileContext.Provider>
-  );
-};
+    <MobileContext.Provider value={isMobile}>{children}</MobileContext.Provider>
+  )
+}
 
-export const useMobile = () => useContext(MobileContext); 
+export const useMobile = () => useContext(MobileContext)

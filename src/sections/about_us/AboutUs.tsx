@@ -1,6 +1,6 @@
 import "./AboutUs.css"
 
-import React from "react"
+import * as React from "react"
 
 const AboutUs: React.FC = () => {
   return (
