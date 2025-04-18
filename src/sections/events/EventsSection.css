@@ -1,6 +1,5 @@
 .events-container {
   display: flex;
-  background-color: white;
   color: #1d2633;
   padding-right: 5rem;
   padding-left: 5rem;
@@ -9,9 +8,9 @@
 
 .events-container .sidebar {
   width: 30%;
-  font-size: 24px;
+  font-size: var(--font-size-l);
   font-weight: bold;
-  padding: 10px;
+  padding: 1rem 0;
   display: flex;
 }
 
@@ -28,16 +27,16 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
-  gap: 20px;
+  gap: 2em;
   position: relative;
-  max-width: 1200px; /* Ограничиваем максимальную ширину */
+  max-width: 100rem;
   margin: 0 auto;
 }
 
 /* Делаем блоки более гибкими */
 .events-container .box > div {
   flex: 1 1 calc(45% - 10px); /* Убираем жесткие ограничения, делаем гибкими */
-  padding: 20px;
+  padding: 1rem;
   text-align: center;
   height: auto; /* Позволяем блокам адаптироваться по высоте */
   position: relative;
@@ -47,7 +46,7 @@
 .events-container .box > div::after {
   content: "";
   position: absolute;
-  bottom: -10px;
+  bottom: -0.5rem;
   left: 2%;
   width: 95%;
   height: 1px;
@@ -72,6 +71,10 @@
 
 /* Медиазапросы для адаптации */
 @media (max-width: 768px) {
+  .events-container .box > div:nth-last-child(2)::after {
+    content: "";
+  }
+
   .events-container {
     flex-direction: column;
     padding: 1rem;
