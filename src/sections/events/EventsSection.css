@@ -1,0 +1,109 @@
+.events-container {
+  display: flex;
+  background-color: white;
+  color: #1d2633;
+  padding-right: 5rem;
+  padding-left: 5rem;
+  padding-top: 5rem;
+}
+
+.events-container .sidebar {
+  width: 30%;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px;
+  display: flex;
+}
+
+.events-container .events {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.events-container .box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+  position: relative;
+  max-width: 1200px; /* Ограничиваем максимальную ширину */
+  margin: 0 auto;
+}
+
+/* Делаем блоки более гибкими */
+.events-container .box > div {
+  flex: 1 1 calc(45% - 10px); /* Убираем жесткие ограничения, делаем гибкими */
+  padding: 20px;
+  text-align: center;
+  height: auto; /* Позволяем блокам адаптироваться по высоте */
+  position: relative;
+}
+
+/* Линия под блоками */
+.events-container .box > div::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 2%;
+  width: 95%;
+  height: 1px;
+  background-color: rgba(66, 61, 61, 0.259);
+}
+
+/* Убираем линию у последнего блока */
+.events-container .box > div:nth-last-child(-n + 2)::after {
+  content: none;
+}
+
+/* Вертикальная линия слева */
+.events-container .box::before {
+  content: "";
+  position: absolute;
+  left: 0%;
+  top: 0%; /* Линия начинает от верхней части блока */
+  height: 100%; /* Линия будет растягиваться на 100% высоты родительского блока */
+  width: 1px;
+  background-color: rgba(66, 61, 61, 0.259);
+}
+
+/* Медиазапросы для адаптации */
+@media (max-width: 768px) {
+  .events-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .events-container .sidebar {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .events-container .events {
+    width: 100%;
+  }
+
+  .events-container .box > div {
+    flex: 1 1 100%; /* Каждый блок будет занимать всю ширину */
+  }
+
+  .events-container .box {
+    flex-direction: column; /* Блоки будут располагаться вертикально */
+  }
+}
+
+@media (min-width: 1340px) {
+  .events-container .box::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0%; /* Линия начинает от верхней части блока */
+    height: 100%; /* Линия будет растягиваться на 100% высоты родительского блока */
+    width: 1px;
+    background-color: rgba(66, 61, 61, 0.259);
+  }
+}
