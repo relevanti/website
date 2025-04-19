@@ -5,7 +5,7 @@ const AboutUsCards = () => {
     <div className="about-us-cards">
       <div className="about-us-card">
         <h3>Кто участвует в Релевантах?</h3>
-        <img src="/images/cards_participant.png" alt="Participants" />
+        <img src="/images/cards_participant.webp" alt="Participants" />
         <p>
           Обычные люди, которые осознанно выбрали сложный путь. Те, кто готовы
           учиться, меняться, поступаться удобством ради устойчивого результата.
@@ -15,7 +15,7 @@ const AboutUsCards = () => {
       </div>
       <div className="about-us-card">
         <h3>Это бесплатно?!</h3>
-        <img src="/images/cards_value.png" alt="Value" />
+        <img src="/images/cards_value.webp" alt="Value" />
         <p>
           Мы не зарабатываем на участниках — мы зарабатываем вместе с ними.
           Здесь платят временем, усилиями и ответственностью.
@@ -23,7 +23,7 @@ const AboutUsCards = () => {
       </div>
       <div className="about-us-card">
         <h3>Наш подход</h3>
-        <img src="/images/cards_approach.png" alt="Approach" />
+        <img src="/images/cards_approach.webp" alt="Approach" />
         <p>
           Мы объединяемся вокруг конкретных проектов — например, создание
           сообщества, карьера, развитие навыков. Важные решения принимаем
