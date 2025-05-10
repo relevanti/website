@@ -29,13 +29,41 @@
   flex-direction: column;
   margin-top: 10rem;
   gap: 2rem;
+  align-items: center;
 }
 
-.full-screen-nav a {
+.full-screen-menu .item {
   color: white;
   font-size: var(--font-size-m);
-  text-decoration: none;
   text-align: center;
+  text-decoration: none;
+  margin: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "ReneSansCyr", sans-serif;
+  font-weight: 600;
+  position: relative;
+  width: fit-content;
+}
+
+.full-screen-menu .item::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1.5px;
+  bottom: -0.1em;
+  left: 50%;
+  background-color: #c9c9c9;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.full-screen-menu .item:hover::after {
+  width: 30%;
+}
+.full-screen-menu .item.active::after {
+  width: 100%;
 }
 
 .full-screen-menu .join-button {
@@ -43,11 +71,16 @@
   background-color: #ffffff;
   padding: 0.3rem 2.5rem;
   color: #1d2633;
+  font-size: var(--font-size-m);
+  text-decoration: none;
+  text-align: center;
 }
 
 .full-screen-menu .login-button {
   color: white;
   font-size: var(--font-size-m);
+  text-decoration: none;
+  text-align: center;
   font-family: "ReneSansCyr", sans-serif;
   font-weight: 600;
   padding: 0.3rem 2.5rem;

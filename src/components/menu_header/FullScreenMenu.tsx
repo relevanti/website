@@ -1,5 +1,6 @@
 import "./FullScreenMenu.css"
 
+import { Link } from "@tanstack/react-router"
 import * as React from "react"
 
 interface FullScreenMenuProps {
@@ -11,21 +12,21 @@ const FullScreenMenu: React.FC<FullScreenMenuProps> = ({ isOpen, onClose }) => {
   return (
     <div className={`full-screen-menu ${isOpen ? "open" : ""}`}>
       <nav className="full-screen-nav">
-        {/*<a href="/" className="menu-header-item" onClick={onClose}>*/}
-        {/*  Главная*/}
-        {/*</a>*/}
-        {/*<a href="/community" className="menu-header-item" onClick={onClose}>*/}
-        {/*  Сообщество*/}
-        {/*</a>*/}
-        {/*<a href="/strategy" className="menu-header-item" onClick={onClose}>*/}
+        <Link to="/" className="item" onClick={onClose}>
+          Главная
+        </Link>
+        <Link to="/community" className="item" onClick={onClose}>
+          Сообщество
+        </Link>
+        {/*<Link to="/strategy" className="item" onClick={onClose}>*/}
         {/*  Стратегия*/}
-        {/*</a>*/}
-        {/*<a href="/faq" className="menu-header-item" onClick={onClose}>*/}
+        {/*</Link>*/}
+        {/*<Link to="/faq" className="item" onClick={onClose}>*/}
         {/*  FAQ*/}
-        {/*</a>*/}
-        {/*<a href="/partnership" className="menu-header-item" onClick={onClose}>*/}
+        {/*</Link>*/}
+        {/*<Link to="/partnership" className="item" onClick={onClose}>*/}
         {/*  Партнерство*/}
-        {/*</a>*/}
+        {/*</Link>*/}
 
         <div className="join-button-container">
           <a
@@ -35,9 +36,9 @@ const FullScreenMenu: React.FC<FullScreenMenuProps> = ({ isOpen, onClose }) => {
           >
             Вход
           </a>
-          <a href="/#join" className="join-button" onClick={onClose}>
+          <Link to="/" hash="join" className="join-button" onClick={onClose}>
             Вступить
-          </a>
+          </Link>
         </div>
       </nav>
     </div>

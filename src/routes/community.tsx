@@ -1,0 +1,22 @@
+import JuicyHeader from "@/components/juicy_header/JuicyHeader"
+import BigFooterSection from "@/sections/big_footer/BigFooterSection"
+import PrinciplesSection from "@/sections/principles/PrinciplesSection"
+import { createFileRoute } from "@tanstack/react-router"
+
+export const Route = createFileRoute("/community")({
+  component: Community,
+})
+
+function Community() {
+  return (
+    <div className="page-content">
+      <JuicyHeader
+        backgroundImage="/images/team_working.webp"
+        backgroundPosition="center 40%"
+        title="Сообщество"
+      />
+      <PrinciplesSection />
+      <BigFooterSection />
+    </div>
+  )
+}

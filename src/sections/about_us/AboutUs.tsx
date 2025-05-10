@@ -1,5 +1,6 @@
 import "./AboutUs.css"
 
+import Image from "@/components/image/Image"
 import * as React from "react"
 
 const AboutUs: React.FC = () => {
@@ -17,7 +18,7 @@ const AboutUs: React.FC = () => {
           </strong>
         </p>
         <div className="about-us-photo-mobile">
-          <img src="/images/group_photo.webp" alt="About Us" />
+          <Image src="/images/group_photo.webp" alt="About Us" />
         </div>
         <p>
           Вместе мы хотим достичь плато, на котором можно строить дальнейшую
@@ -27,7 +28,7 @@ const AboutUs: React.FC = () => {
         </p>
       </div>
       <div className="about-us-photo">
-        <img src="/images/group_photo.webp" alt="About Us" />
+        <Image src="/images/group_photo.webp" alt="About Us" aspectRatio={1} />
       </div>
     </div>
   )

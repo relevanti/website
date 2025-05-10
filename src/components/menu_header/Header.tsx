@@ -13,7 +13,7 @@ const Header: React.FC = () => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY
       const firstSectionHeight = window.innerHeight
-      setIsScrolled(scrollPosition > firstSectionHeight / 2)
+      setIsScrolled(scrollPosition > firstSectionHeight * 0.3)
     }
 
     window.addEventListener("scroll", handleScroll)

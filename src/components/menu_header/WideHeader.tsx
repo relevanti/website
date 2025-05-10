@@ -1,6 +1,7 @@
 import "./WideHeader.css"
 
 import HorizontalLogo from "@/components/horizontal_logo/HorizontalLogo"
+import { Link } from "@tanstack/react-router"
 import * as React from "react"
 
 interface WideHeaderProps {
@@ -14,26 +15,34 @@ const WideHeader: React.FC<WideHeaderProps> = ({ isScrolled }) => {
         <HorizontalLogo expand={false} size={54} />
       </div>
       <nav className="center">
-        {/*<a href="/" className="item">*/}
-        {/*  Главная*/}
-        {/*</a>*/}
-        {/*<a href="/community" className="item">*/}
-        {/*  Сообщество*/}
-        {/*</a>*/}
-        {/*<a href="/strategy" className="item">*/}
-        {/*  Стратегия*/}
-        {/*</a>*/}
-        {/*<a href="/faq" className="item">*/}
-        {/*  FAQ*/}
-        {/*</a>*/}
+        <Link
+          to="/"
+          className="item"
+          activeProps={{ className: "item active" }}
+        >
+          Главная
+        </Link>
+        <Link
+          to="/community"
+          className="item"
+          activeProps={{ className: "item active" }}
+        >
+          Сообщество
+        </Link>
+        {/* <Link to="/strategy" className="item">
+          Стратегия
+        </Link>
+        <Link to="/faq" className="item">
+          FAQ
+        </Link> */}
       </nav>
       <nav className="right">
-        {/*<a href="/partnership" className="item">*/}
+        {/*<Link to="/partnership" className="item">*/}
         {/*  Партнерство*/}
-        {/*</a>*/}
-        <a href="/#join" className="join-button">
+        {/*</Link>*/}
+        <Link to="/" hash="join" className="join-button">
           Вступить
-        </a>
+        </Link>
         <a href="https://chat.relevanti.org/#/login" className="item">
           Вход
         </a>
