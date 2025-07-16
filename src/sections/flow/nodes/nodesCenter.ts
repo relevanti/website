@@ -4,10 +4,14 @@ import texts from "./texts.json"
 
 const NODE_GAP = 200
 
+const NODE_GAP2 = 350
+
+const NODE_GAP3 = 360
+
 export const desktopNodes: Node[] = [
   {
     id: "node-community",
-    position: { x: 120, y: 100 },
+    position: { x: 430, y: 500 },
     data: { label: "Сообщество" },
     style: {
       fontSize: "32px",
@@ -19,18 +23,18 @@ export const desktopNodes: Node[] = [
     sourcePosition: Position.Right,
   },
   {
-    id: "node-trust",
-    position: { x: NODE_GAP * 2 + 5, y: 100 },
-    data: { label: "Доверие" },
+    id: "node-risk",
+    position: { x: 900, y: 500 },
+    data: { label: "Контроль рисков" },
     style: { fontSize: "32px", fontWeight: "regular", width: "auto" },
     targetPosition: Position.Left,
-    sourcePosition: Position.Left,
+    sourcePosition: Position.Bottom,
   },
   {
-    id: "node-text1",
+    id: "node-text6",
     type: "customText",
-    position: { x: NODE_GAP * 2 + 300, y: 80 },
-    data: { label: texts.firstText },
+    position: { x: NODE_GAP * 2 + 20, y: 180 },
+    data: { label: texts.sixthText },
     style: {
       border: "none",
       background: "none",
@@ -43,8 +47,8 @@ export const desktopNodes: Node[] = [
     sourcePosition: Position.Left,
   },
   {
-    id: "node-shadow1",
-    position: { x: NODE_GAP * 2 + 300, y: 125 },
+    id: "node-shadow6",
+    position: { x: NODE_GAP * 2 - 90, y: 240 },
     data: { label: "" },
     style: {
       border: "none",
@@ -54,100 +58,28 @@ export const desktopNodes: Node[] = [
       minWidth: "450px",
       maxWidth: "600px",
     },
-    targetPosition: Position.Left,
-    sourcePosition: Position.Left,
+    targetPosition: Position.Bottom,
+    sourcePosition: Position.Bottom,
   },
   {
-    id: "node-recruitment",
-    position: { x: 40, y: 320 },
-    data: { label: "Набор и развитие" },
+    id: "node-nutrition",
+    position: { x: -50, y: 500 },
+    data: { label: "Питание" },
     style: { fontSize: "32px", fontWeight: "regular", width: "auto" },
     sourcePosition: Position.Right,
-    targetPosition: Position.Left,
+    targetPosition: Position.Bottom,
   },
   {
     id: "node-activity",
-    position: { x: NODE_GAP * 2, y: 320 },
+    position: { x: 440, y: 300 },
     data: { label: "Активность" },
     style: { fontSize: "32px", fontWeight: "regular", width: "auto" },
-    targetPosition: Position.Left,
-    sourcePosition: Position.Right,
   },
   {
-    id: "node-text2",
-    type: "customText",
-    position: { x: NODE_GAP * 2 + 300, y: 320 },
-    data: { label: texts.secondText },
-    style: {
-      border: "none",
-      background: "none",
-      boxShadow: "none",
-      width: "auto",
-      minWidth: "450px",
-      maxWidth: "600px",
-    },
-    targetPosition: Position.Left,
-    sourcePosition: Position.Left,
-  },
-  {
-    id: "node-shadow2",
-    position: { x: NODE_GAP * 2 + 300, y: 345 },
-    data: { label: "" },
-    style: {
-      border: "none",
-      background: "none",
-      boxShadow: "none",
-      width: "auto",
-      minWidth: "450px",
-      maxWidth: "600px",
-    },
-    targetPosition: Position.Left,
-    sourcePosition: Position.Left,
-  },
-  {
-    id: "node-consistency",
-    position: { x: NODE_GAP * 2, y: 500 },
-    data: { label: "Согласованность" },
-    style: { fontSize: "32px", fontWeight: "regular", width: "auto" },
-    targetPosition: Position.Left,
-    sourcePosition: Position.Left,
-  },
-  {
-    id: "node-text3",
-    type: "customText",
-    position: { x: NODE_GAP * 2 + 300, y: 490 },
-    data: { label: texts.thirdText },
-    style: {
-      border: "none",
-      background: "none",
-      boxShadow: "none",
-      width: "auto",
-      minWidth: "450px",
-      maxWidth: "600px",
-    },
-    targetPosition: Position.Left,
-    sourcePosition: Position.Left,
-  },
-  {
-    id: "node-shadow3",
-    position: { x: NODE_GAP * 2 + 300, y: 525 },
-    data: { label: "" },
-    style: {
-      border: "none",
-      background: "none",
-      boxShadow: "none",
-      width: "auto",
-      minWidth: "450px",
-      maxWidth: "600px",
-    },
-    targetPosition: Position.Left,
-    sourcePosition: Position.Left,
-  },
-  {
-    id: "node-text4",
+    id: "node-text11",
     type: "customText2",
-    position: { x: 40, y: 440 },
-    data: { label: texts.fourthText },
+    position: { x: NODE_GAP * 2 + 500, y: 600 },
+    data: { label: texts.eleventhText },
     style: {
       border: "none",
       background: "none",
@@ -160,8 +92,8 @@ export const desktopNodes: Node[] = [
     sourcePosition: Position.Left,
   },
   {
-    id: "node-shadow4",
-    position: { x: 40, y: 480 },
+    id: "node-shadow11",
+    position: { x: NODE_GAP * 2 + 412, y: 595 },
     data: { label: "" },
     style: {
       border: "none",
@@ -171,22 +103,50 @@ export const desktopNodes: Node[] = [
       minWidth: "450px",
       maxWidth: "600px",
     },
-    targetPosition: Position.Left,
-    sourcePosition: Position.Left,
-  },
-  {
-    id: "node-difficult",
-    position: { x: NODE_GAP - 30, y: 650 },
-    data: { label: "Преодоление трудностей" },
-    style: { fontSize: "32px", fontWeight: "regular", width: "auto" },
     targetPosition: Position.Top,
     sourcePosition: Position.Top,
   },
   {
-    id: "node-text5",
-    type: "customText",
-    position: { x: NODE_GAP - 30, y: 780 },
-    data: { label: texts.fifthText },
+    id: "node-consistency",
+    position: { x: NODE_GAP * 2 + 7, y: 800 },
+    data: { label: "Культура мысли" },
+    style: { fontSize: "32px", fontWeight: "regular", width: "auto" },
+  },
+  {
+    id: "node-text10",
+    type: "customText2",
+    position: { x: -120, y: 600 },
+    data: { label: texts.tenthText },
+    style: {
+      border: "none",
+      background: "none",
+      boxShadow: "none",
+      width: "auto",
+      minWidth: "450px",
+      maxWidth: "600px",
+    },
+    targetPosition: Position.Left,
+    sourcePosition: Position.Left,
+  },
+  {
+    id: "node-shadow10",
+    position: { x: -202, y: 600 },
+    data: { label: "" },
+    style: {
+      border: "none",
+      background: "none",
+      boxShadow: "none",
+      width: "auto",
+      minWidth: "450px",
+      maxWidth: "600px",
+    },
+    sourcePosition: Position.Top,
+  },
+  {
+    id: "node-text9",
+    type: "customText2",
+    position: { x: -30, y: 900 },
+    data: { label: texts.ninethText },
     style: {
       border: "none",
       background: "none",
@@ -197,8 +157,45 @@ export const desktopNodes: Node[] = [
     },
   },
   {
-    id: "node-shadow5",
-    position: { x: NODE_GAP - 56, y: 780 },
+    id: "node-shadow9",
+    position: { x: -122, y: 910 },
+    data: { label: "" },
+    style: {
+      border: "none",
+      background: "none",
+      boxShadow: "none",
+      width: "auto",
+      minWidth: "450px",
+      maxWidth: "600px",
+    },
+    targetPosition: Position.Top,
+    sourcePosition: Position.Top,
+  },
+  {
+    id: "node-physical",
+    position: { x: NODE_GAP - 200, y: 800 },
+    data: { label: "Физкультура" },
+    style: { fontSize: "32px", fontWeight: "regular", width: "auto" },
+    targetPosition: Position.Right,
+    sourcePosition: Position.Bottom,
+  },
+  {
+    id: "node-text8",
+    type: "customText",
+    position: { x: NODE_GAP + 150, y: 910 },
+    data: { label: texts.eigthText },
+    style: {
+      border: "none",
+      background: "none",
+      boxShadow: "none",
+      width: "auto",
+      minWidth: "450px",
+      maxWidth: "600px",
+    },
+  },
+  {
+    id: "node-shadow8",
+    position: { x: NODE_GAP + 110, y: 910 },
     data: { label: "" },
     style: {
       border: "none",
@@ -215,70 +212,44 @@ export const desktopNodes: Node[] = [
 
 export const desktopEdges: Edge[] = [
   {
-    id: "edge-community-trust",
-    source: "node-community",
-    target: "node-trust",
+    id: "edge-shadow6-shadow8",
+    source: "node-shadow6",
+    target: "node-shadow8",
   },
   {
-    id: "edge-trust-text1",
-    source: "node-trust",
-    target: "node-text1",
+    id: "edge-nutrition-risk",
+    source: "node-nutrition",
+    target: "node-risk",
   },
   {
-    id: "edge-trust-shadow1",
-    source: "node-trust",
-    target: "node-shadow1",
-  },
-  {
-    id: "edge-recruitment-activity",
-    source: "node-recruitment",
-    target: "node-activity",
-  },
-  {
-    id: "edge-activity-text2",
-    source: "node-activity",
-    target: "node-text2",
-  },
-  {
-    id: "edge-activity-shadow2",
-    source: "node-activity",
-    target: "node-shadow2",
-  },
-  {
-    id: "edge-concsistency-difficult",
-    source: "node-consistency",
-    target: "node-difficult",
+    id: "edge-nutrition-physical",
+    source: "node-nutrition",
+    target: "node-physical",
     type: "step",
   },
   {
-    id: "edge-consistency-shadow3",
-    source: "node-consistency",
-    target: "node-shadow3",
+    id: "edge-physical-shadow9",
+    source: "node-physical",
+    target: "node-shadow9",
   },
   {
-    id: "edge-recruitment-shadow4",
-    source: "node-shadow4",
-    target: "node-recruitment",
+    id: "edge-nutrition-shadow10",
+    source: "node-shadow10",
+    target: "node-nutrition",
   },
   {
-    id: "edge-trust-difficult",
-    source: "node-trust",
-    target: "node-difficult",
-    type: "step",
-  },
-  {
-    id: "edge-shadow5-difficult",
-    source: "node-difficult",
-    target: "node-shadow5",
+    id: "edge-risk-shadow11",
+    source: "node-risk",
+    target: "node-shadow11",
   },
 ]
 
-//Mobile flow for mobile view
+//Mobile View
 export const mobileNodes: Node[] = [
   {
     id: "node-community",
-    position: { x: 350, y: -370 },
-    data: { label: "Сообщество" },
+    position: { x: 700 - 350, y: NODE_GAP2 - 370 },
+    data: { label: "Здоровье" },
     style: {
       fontSize: "32px",
       fontWeight: "regular",
@@ -290,17 +261,17 @@ export const mobileNodes: Node[] = [
   },
   {
     id: "node-trust",
-    position: { x: 200, y: -270 },
-    data: { label: "Доверие" },
+    position: { x: NODE_GAP3 - 200, y: NODE_GAP2 - 270 },
+    data: { label: "Образ жизни" },
     style: { fontSize: "32px", fontWeight: "regular", width: "auto" },
     targetPosition: Position.Left,
     sourcePosition: Position.Bottom,
   },
   {
     id: "node-text1",
-    type: "customText",
-    position: { x: 200, y: -180 },
-    data: { label: texts.firstText },
+    type: "customText2",
+    position: { x: NODE_GAP3 - 200, y: NODE_GAP2 - 140 },
+    data: { label: texts.sixthText },
     style: {
       border: "none",
       background: "none",
@@ -314,7 +285,7 @@ export const mobileNodes: Node[] = [
   },
   {
     id: "node-shadow1",
-    position: { x: 50, y: -170 },
+    position: { x: NODE_GAP3 - 316, y: NODE_GAP2 - 140 },
     data: { label: "" },
     style: {
       border: "none",
@@ -329,16 +300,16 @@ export const mobileNodes: Node[] = [
   },
   {
     id: "node-recruitment",
-    position: { x: 200, y: 50 },
-    data: { label: "Набор и развитие" },
+    position: { x: NODE_GAP3 - 200, y: NODE_GAP2 + 50 },
+    data: { label: "Питание" },
     style: { fontSize: "32px", fontWeight: "regular", width: "auto" },
     sourcePosition: Position.Left,
     targetPosition: Position.Bottom,
   },
   {
     id: "node-activity",
-    position: { x: NODE_GAP * 2 - 200, y: 480 },
-    data: { label: "Активность" },
+    position: { x: NODE_GAP3 - 200, y: NODE_GAP2 + 480 },
+    data: { label: "Культура мысли" },
     style: { fontSize: "32px", fontWeight: "regular", width: "auto" },
     targetPosition: Position.Left,
     sourcePosition: Position.Bottom,
@@ -346,8 +317,8 @@ export const mobileNodes: Node[] = [
   {
     id: "node-text2",
     type: "customText",
-    position: { x: NODE_GAP * 2 - 200, y: 590 },
-    data: { label: texts.secondText },
+    position: { x: NODE_GAP3 - 200, y: NODE_GAP2 + 590 },
+    data: { label: texts.eleventhText },
     style: {
       border: "none",
       background: "none",
@@ -361,7 +332,7 @@ export const mobileNodes: Node[] = [
   },
   {
     id: "node-shadow2",
-    position: { x: NODE_GAP * 2 - 330, y: 580 },
+    position: { x: NODE_GAP3 - 296, y: NODE_GAP2 + 580 },
     data: { label: "" },
     style: {
       border: "none",
@@ -376,17 +347,17 @@ export const mobileNodes: Node[] = [
   },
   {
     id: "node-consistency",
-    position: { x: NODE_GAP * 2 - 200, y: 300 },
-    data: { label: "Согласованность" },
+    position: { x: NODE_GAP3 - 200, y: NODE_GAP2 + 280 },
+    data: { label: "Физкультура" },
     style: { fontSize: "32px", fontWeight: "regular", width: "auto" },
     targetPosition: Position.Bottom,
     sourcePosition: Position.Left,
   },
   {
     id: "node-text3",
-    type: "customText",
-    position: { x: NODE_GAP * 2 - 200, y: 400 },
-    data: { label: texts.thirdText },
+    type: "customText2",
+    position: { x: NODE_GAP3 - 200, y: NODE_GAP2 + 370 },
+    data: { label: texts.ninethText },
     style: {
       border: "none",
       background: "none",
@@ -400,7 +371,7 @@ export const mobileNodes: Node[] = [
   },
   {
     id: "node-shadow3",
-    position: { x: NODE_GAP * 2 - 290, y: 400 },
+    position: { x: NODE_GAP3 - 322, y: NODE_GAP2 + 380 },
     data: { label: "" },
     style: {
       border: "none",
@@ -416,8 +387,8 @@ export const mobileNodes: Node[] = [
   {
     id: "node-text4",
     type: "customText2",
-    position: { x: 210, y: 160 },
-    data: { label: texts.fourthText },
+    position: { x: NODE_GAP3 - 210, y: NODE_GAP2 + 160 },
+    data: { label: texts.tenthText },
     style: {
       border: "none",
       background: "none",
@@ -431,7 +402,7 @@ export const mobileNodes: Node[] = [
   },
   {
     id: "node-shadow4",
-    position: { x: 118, y: 160 },
+    position: { x: NODE_GAP3 - 352, y: NODE_GAP2 + 160 },
     data: { label: "" },
     style: {
       border: "none",
@@ -446,8 +417,8 @@ export const mobileNodes: Node[] = [
   },
   {
     id: "node-difficult",
-    position: { x: NODE_GAP + 10, y: 700 },
-    data: { label: "Преодоление трудностей" },
+    position: { x: NODE_GAP3 - 180, y: NODE_GAP2 + 700 },
+    data: { label: "Контроль рисков" },
     style: { fontSize: "32px", fontWeight: "regular", width: "auto" },
     targetPosition: Position.Left,
     sourcePosition: Position.Bottom,
@@ -455,8 +426,8 @@ export const mobileNodes: Node[] = [
   {
     id: "node-text5",
     type: "customText",
-    position: { x: NODE_GAP - 30, y: 850 },
-    data: { label: texts.fifthText },
+    position: { x: NODE_GAP3 - 208, y: NODE_GAP2 + 810 },
+    data: { label: texts.eigthText },
     style: {
       border: "none",
       background: "none",
@@ -468,7 +439,7 @@ export const mobileNodes: Node[] = [
   },
   {
     id: "node-shadow5",
-    position: { x: NODE_GAP - 58, y: 860 },
+    position: { x: NODE_GAP3 - 268, y: NODE_GAP2 + 810 },
     data: { label: "" },
     style: {
       border: "none",
