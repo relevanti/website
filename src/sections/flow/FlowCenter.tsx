@@ -8,7 +8,7 @@ import {
   desktopNodes,
   mobileEdges,
   mobileNodes,
-} from "./nodes/nodesUp"
+} from "./nodes/nodesCenter"
 import { useIsMobile } from "./useIsMobile"
 
 const nodeTypes = {
@@ -16,23 +16,34 @@ const nodeTypes = {
   customText2: CustomTextNode2,
 }
 
-const FlowUp = () => {
+const FlowCenter = () => {
   const isMobile = useIsMobile()
   const nodes = isMobile ? mobileNodes : desktopNodes
   const edges = isMobile ? mobileEdges : desktopEdges
 
+  const desktopStyle = {
+    display: "flex",
+    justifyContent: "flex-end",
+    alignItems: "center",
+    width: "100vw",
+    height: "100vh",
+    backgroundColor: "#ffffff",
+    padding: "10px",
+  }
+
+  const mobileStyle = {
+    display: "flex",
+    justifyContent: "flex-start",
+    alignItems: "flex-start",
+    width: "90vw",
+    height: "130vh",
+    backgroundColor: "#ffffff",
+    padding: "10px",
+  }
+
   return (
-    <div
-      style={{
-        justifyContent: "flex-start",
-        alignItems: "flex-start",
-        width: "100vw",
-        height: "130vh",
-        backgroundColor: "#fffff",
-        padding: "10px",
-      }}
-    >
-      <div style={{ width: "80%", height: "90%" }}>
+    <div style={isMobile ? mobileStyle : desktopStyle}>
+      <div style={{ width: isMobile ? "100%" : "80%", height: "100%" }}>
         <ReactFlow
           nodes={nodes}
           edges={edges}
@@ -48,4 +59,4 @@ const FlowUp = () => {
   )
 }
 
-export default FlowUp
+export default FlowCenter
