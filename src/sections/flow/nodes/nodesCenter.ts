@@ -4,7 +4,7 @@ import texts from "./texts.json"
 
 const NODE_GAP = 200
 
-const NODE_GAP2 = 400
+const NODE_GAP2 = 450
 
 const NODE_GAP3 = 330
 

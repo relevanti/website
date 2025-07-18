@@ -1,20 +1,26 @@
+import React from "react"
+
 import FlowCenter from "./FlowCenter"
 import FlowDown from "./FlowDown"
 import FlowUp from "./FlowUp"
+import { useIsMobile } from "./useIsMobile"
 
-export const FlowSection = () => {
+export const FlowSection: React.FC = () => {
+  const isMobile = useIsMobile()
+
   return (
     <div>
       <h1
         style={{
           textAlign: "center",
-          color: "Black",
+          color: "black",
           fontWeight: "bold",
           marginTop: "8px",
         }}
       >
         Пути развития целей
       </h1>
+
       <section
         className="flow-section"
         id="flow-up"
@@ -22,16 +28,18 @@ export const FlowSection = () => {
       >
         <FlowUp />
       </section>
+
       <section
         className="flow-section"
         id="flow-center"
-        style={{ marginTop: "-400px" }}
+        style={{ marginTop: isMobile ? "-300px" : "-400px" }}
       >
         <FlowCenter />
       </section>
+
       <section
         className="flow-section"
-        id="flow-center"
+        id="flow-down"
         style={{ marginTop: "-150px" }}
       >
         <FlowDown />
