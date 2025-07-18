@@ -1,4 +1,5 @@
 import FlowCenter from "./FlowCenter"
+import FlowDown from "./FlowDown"
 import FlowUp from "./FlowUp"
 
 export const FlowSection = () => {
@@ -27,6 +28,13 @@ export const FlowSection = () => {
         style={{ marginTop: "-400px" }}
       >
         <FlowCenter />
+      </section>
+      <section
+        className="flow-section"
+        id="flow-center"
+        style={{ marginTop: "-150px" }}
+      >
+        <FlowDown />
       </section>
     </div>
   )
