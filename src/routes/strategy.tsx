@@ -1,0 +1,26 @@
+import JuicyHeader from "@/components/juicy_header/JuicyHeader"
+import BigFooterSection from "@/sections/big_footer/BigFooterSection"
+import DevelopmentPrioritiesTimeline from "@/sections/develop/Develop"
+import { FlowSection } from "@/sections/flow/FlowSection"
+import OurGoals from "@/sections/our_goals/OurGoals"
+import { createFileRoute } from "@tanstack/react-router"
+
+export const Route = createFileRoute("/strategy")({
+  component: Strategy,
+})
+
+function Strategy() {
+  return (
+    <div className="page-content">
+      <JuicyHeader
+        backgroundImage="/images/team_working.webp"
+        backgroundPosition="center 40%"
+        title="Strategy"
+      />
+      <OurGoals />
+      <FlowSection />
+      <DevelopmentPrioritiesTimeline />
+      <BigFooterSection />
+    </div>
+  )
+}

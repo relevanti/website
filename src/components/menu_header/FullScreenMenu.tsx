@@ -18,12 +18,12 @@ const FullScreenMenu: React.FC<FullScreenMenuProps> = ({ isOpen, onClose }) => {
         <Link to="/community" className="item" onClick={onClose}>
           Сообщество
         </Link>
-        {/*<Link to="/strategy" className="item" onClick={onClose}>*/}
-        {/*  Стратегия*/}
-        {/*</Link>*/}
-        {/*<Link to="/faq" className="item" onClick={onClose}>*/}
-        {/*  FAQ*/}
-        {/*</Link>*/}
+        <Link to="/strategy" className="item" onClick={onClose}>
+          Стратегия
+        </Link>
+        <Link to="/question" className="item" onClick={onClose}>
+          FAQ
+        </Link>
         {/*<Link to="/partnership" className="item" onClick={onClose}>*/}
         {/*  Партнерство*/}
         {/*</Link>*/}
