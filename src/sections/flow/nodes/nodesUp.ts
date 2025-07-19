@@ -468,7 +468,7 @@ export const mobileNodes: Node[] = [
   },
   {
     id: "node-shadow5",
-    position: { x: NODE_GAP - 58, y: 860 },
+    position: { x: NODE_GAP - 65, y: 860 },
     data: { label: "" },
     style: {
       border: "none",

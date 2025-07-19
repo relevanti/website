@@ -32,7 +32,7 @@ export const FlowSection: React.FC = () => {
       <section
         className="flow-section"
         id="flow-center"
-        style={{ marginTop: isMobile ? "-300px" : "-400px" }}
+        style={{ marginTop: isMobile ? "-340px" : "-400px" }}
       >
         <FlowCenter />
       </section>
@@ -40,7 +40,7 @@ export const FlowSection: React.FC = () => {
       <section
         className="flow-section"
         id="flow-down"
-        style={{ marginTop: "-150px" }}
+        style={{ marginTop: isMobile ? "-250px" : "-150px" }}
       >
         <FlowDown />
       </section>

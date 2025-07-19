@@ -314,7 +314,7 @@ export const mobileNodes: Node[] = [
   },
   {
     id: "node-shadow1",
-    position: { x: 132, y: -170 },
+    position: { x: 125, y: -180 },
     data: { label: "" },
     style: {
       border: "none",
