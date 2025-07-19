@@ -6,7 +6,7 @@ const NODE_GAP = 200
 
 const NODE_GAP2 = 450
 
-const NODE_GAP3 = 330
+const NODE_GAP3 = 300
 
 export const desktopNodes: Node[] = [
   {

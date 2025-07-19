@@ -1,6 +1,7 @@
 import "reactflow/dist/style.css"
 
-import ReactFlow from "reactflow"
+import React from "react"
+import ReactFlow, { Edge, Node } from "reactflow"
 
 import { CustomTextNode, CustomTextNode2 } from "./CustomTextNode"
 import {
@@ -16,12 +17,12 @@ const nodeTypes = {
   customText2: CustomTextNode2,
 }
 
-const FlowCenter = () => {
-  const isMobile = useIsMobile()
-  const nodes = isMobile ? mobileNodes : desktopNodes
-  const edges = isMobile ? mobileEdges : desktopEdges
+const FlowCenter: React.FC = () => {
+  const isMobile: boolean = useIsMobile()
+  const nodes: Node[] = isMobile ? mobileNodes : desktopNodes
+  const edges: Edge[] = isMobile ? mobileEdges : desktopEdges
 
-  const desktopStyle = {
+  const desktopStyle: React.CSSProperties = {
     display: "flex",
     justifyContent: "flex-end",
     alignItems: "center",
@@ -31,7 +32,7 @@ const FlowCenter = () => {
     padding: "10px",
   }
 
-  const mobileStyle = {
+  const mobileStyle: React.CSSProperties = {
     display: "flex",
     justifyContent: "flex-start",
     alignItems: "flex-start",
