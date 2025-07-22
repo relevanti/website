@@ -28,7 +28,7 @@ const FlowUp = () => {
         alignItems: "flex-start",
         width: "100vw",
         height: "130vh",
-        backgroundColor: "#fffff",
+        backgroundColor: "#ffffff",
         padding: "10px",
       }}
     >
@@ -42,6 +42,12 @@ const FlowUp = () => {
             style: { strokeWidth: 2 },
           }}
           fitView
+          zoomOnScroll={false}
+          panOnScroll={false}
+          zoomOnPinch={false}
+          panOnDrag={false}
+          zoomOnDoubleClick={false}
+          proOptions={{ hideAttribution: true }}
         />
       </div>
     </div>

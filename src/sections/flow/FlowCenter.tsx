@@ -54,6 +54,12 @@ const FlowCenter: React.FC = () => {
             style: { strokeWidth: 2 },
           }}
           fitView
+          zoomOnScroll={false}
+          panOnScroll={false}
+          zoomOnPinch={false}
+          panOnDrag={false}
+          zoomOnDoubleClick={false}
+          proOptions={{ hideAttribution: true }}
         />
       </div>
     </div>
