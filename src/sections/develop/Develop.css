@@ -21,7 +21,7 @@
 
 .timeline-line {
   position: absolute;
-  top: 8px;
+  top: 45px;
   left: 0;
   right: 0;
   height: 2px;
@@ -42,6 +42,18 @@
   max-width: 200px;
   text-align: center;
   position: relative;
+}
+
+.timeline-year {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 12px;
+  text-align: center;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .timeline-dot {
@@ -112,9 +124,9 @@
 
   .timeline-line {
     position: absolute;
-    top: 8px;
+    top: 45px;
     left: 15px;
-    right: 15px;
+    width: calc(250px * 5 + 20px * 4);  /* 5 items * 250px width + 4 gaps * 20px */
     height: 2px;
     background: #000;
     z-index: 1;

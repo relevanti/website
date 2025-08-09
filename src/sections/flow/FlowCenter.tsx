@@ -44,7 +44,7 @@ const FlowCenter: React.FC = () => {
 
   return (
     <div style={isMobile ? mobileStyle : desktopStyle}>
-      <div style={{ width: isMobile ? "100%" : "80%", height: "100%" }}>
+      <div style={{ width: isMobile ? "100%" : "80%", height: "100%", cursor: "default" }}>
         <ReactFlow
           nodes={nodes}
           edges={edges}
@@ -59,6 +59,10 @@ const FlowCenter: React.FC = () => {
           zoomOnPinch={false}
           panOnDrag={false}
           zoomOnDoubleClick={false}
+          preventScrolling={false}
+          nodesDraggable={false}
+          nodesConnectable={false}
+          elementsSelectable={false}
           proOptions={{ hideAttribution: true }}
         />
       </div>

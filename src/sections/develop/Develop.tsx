@@ -4,6 +4,7 @@ import React from "react"
 
 interface TimelineItem {
   id: number
+  year: string
   title: string
   description: string
 }
@@ -12,31 +13,36 @@ const DevelopmentPrioritiesTimeline: React.FC = () => {
   const timelineData: TimelineItem[] = [
     {
       id: 1,
+      year: "2025",
       title: "Формирование команды",
-      description: "изучаем целесообразность единомышленников",
+      description: "находим целеустремленных единомышленников",
     },
     {
       id: 2,
+      year: "2026",
       title: "Становление команды",
       description:
         "учимся работать вместе, решая актуальные проблемы друг друга",
     },
     {
       id: 3,
+      year: "2027",
       title: "Накопление ресурсов",
       description:
-        "получаем навыки строим карьеру, создаем сеть знакомств, собираем стартовый капитал",
+        "получаем знания, строим карьеру, создаем сеть знакомств, собираем стартовый капитал",
     },
     {
       id: 4,
+      year: "2030",
       title: "Стратегические проекты",
       description:
-        "запускаем инвестиционные проекты, аккумулируем капитал сообщества",
+        "запускаем инвестиционные проекты, преумножаем капитал сообщества",
     },
     {
       id: 5,
+      year: "2035",
       title: "Свободный выбор",
-      description: "решаем, что хотим делать дальше с новыми возможностями",
+      description: "решаем, что делать дальше с новыми возможностями",
     },
   ]
 
@@ -50,6 +56,7 @@ const DevelopmentPrioritiesTimeline: React.FC = () => {
         <div className="timeline-items">
           {timelineData.map((item) => (
             <div key={item.id} className="timeline-item">
+              <div className="timeline-year">{item.year}</div>
               <div className="timeline-dot"></div>
               <div className="timeline-content">
                 <h3 className="timeline-item-title">{item.title}</h3>

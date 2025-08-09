@@ -13,33 +13,60 @@ const Question: React.FC = () => {
 
   const questionData: QuestionItem[] = [
     {
-      title: "На сколько людей рассчитано сообщество?",
-      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar massa vitae imperdiet sodales. Proin a risus ac lorem aliquam tempus.",
+      title: "Это бизнес сообщество?",
+      body: "Нет, это не бизнес сообщество, это сообщество по созданию капитала. Бизнес недостаточно надежен для заработка начального капитала, но может быть применен для его увеличения в будущем.",
     },
     {
-      title: "А можно с котом?",
-      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar massa vitae imperdiet sodales. Proin a risus ac lorem aliquam tempus.",
+      title: "Это сообщество программистов?",
+      body: "Нет, это не сообщество программистов. Мы используем карьеру в программировании, как инструмент создания начального капитала, потому что он хорошо работает. При появлении лучших условий мы сменим инструмент.",
+    },
+    {
+      title: "Это сообщество ЗОЖников?",
+      body: "Мы ценим здоровый образ жизни и разумный подход к долголетию.",
+    },
+    {
+      title: "Какой возраст участников?",
+      body: "Ценза нет, зато есть участники от 18 до 27 лет.",
+    },
+    {
+      title: "Можно ли к вам присоединиться с плохим знанием английского?",
+      body: "Можно попробовать. Но надо будет посещать дополнительные занятия английского (проводятся в сообществе), и учиться самостоятельно, чтобы подтянуть его до C1 за полгода-год.",
+    },
+    {
+      title: "Как вы из студентов сделаете миллионеров?",
+      body: "Старательное развитие → стабильный заработок → (сложный процент + время) творят чудеса.",
     },
     {
       title: "Как вступить?",
-      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar massa vitae imperdiet sodales. Proin a risus ac lorem aliquam tempus.",
+      body: "Кнопку нажми.",
     },
     {
       title: "Почему это бесплатно?",
-      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar massa vitae imperdiet sodales. Proin a risus ac lorem aliquam tempus.",
+      body: "Нам важнее найти больше единомышленников, чем заработать на этом деньги. Для денег есть более эффективные способы.",
     },
     {
-      title: "Какие требования к участникам?",
-      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar massa vitae imperdiet sodales. Proin a risus ac lorem aliquam tempus.",
+      title: "Что, если я никак не могу посещать какие-то мероприятия?",
+      body: "Обо всем можно договориться.",
     },
     {
-      title:
-        "Еще какой нибудь вопрос, очень очень длинный такой вопрос чтобы не влез в одну строчку?",
-      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar massa vitae imperdiet sodales. Proin a risus ac lorem aliquam tempus.",
+      title: "Сколько людей в сообществе?",
+      body: "До 15 человек. При превышении мы увеличиваем темп развития, чтобы остались те, кому это действительно важно. В случае ажиотажа — запустим параллельные группы.",
     },
     {
-      title: "Короткий, но крайне мудрый вопрос?",
-      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar massa vitae imperdiet sodales. Proin a risus ac lorem aliquam tempus.",
+      title: "Как и за что исключают?",
+      body: "Исключают (a.k.a кикают из чата) только за регулярные или грубые нарушения дисциплины. Но слабая заинтересованность в сообществе и безучастность к общим проектам приводит к постепенной изоляции.",
+    },
+    {
+      title: "Как отбираете надежных людей?",
+      body: "Испытательный срок 2 года с постепенным ростом влияния и доверия.",
+    },
+    {
+      title: "Почему такой долгий испытательный срок?",
+      body: "Это просто название, по-факту участие в сообществе начинается с первого дня.",
+    },
+    {
+      title: "А что после достижения результата?",
+      body: "Финансовая свобода → свободная жизнь → новый трек. Можно остаться, запустить новые проекты, или уйти в одиночное плавание. Главное — дойти до финиша."
     },
   ]
 
@@ -57,8 +84,6 @@ const Question: React.FC = () => {
 
   return (
     <div className="question-container">
-      <h1 className="question-title">Вопросы и ответы</h1>
-
       <div className="question-list">
         {questionData.map((item: QuestionItem, index: number) => (
           <div

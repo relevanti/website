@@ -1,19 +1,22 @@
 {
-    "semi": false,
-    "singleQuote": false,
-    "trailingComma": "es5",
-    "endOfLine": "auto",
-    "plugins": ["prettier-plugin-import-sort"],
-    "importOrder": [
-      "^react",
-      "^@?\\w",
-      "^@/components/(.*)$",
-      "^@/hooks/(.*)$",
-      "^@/utils/(.*)$",
-      "^@/context/(.*)$",
-      "^@/sections/(.*)$",
-      "^[./]"
-    ],
-    "importOrderSeparation": true,
-    "importOrderSortSpecifiers": true  
-  }
+  "semi": false,
+  "singleQuote": false,
+  "trailingComma": "es5",
+  "endOfLine": "auto",
+  "plugins": [
+    "prettier-plugin-import-sort"
+  ],
+  "importOrder": [
+    "^react",
+    "^@?\\w",
+    "^@/components/(.*)$",
+    "^@/hooks/(.*)$",
+    "^@/utils/(.*)$",
+    "^@/context/(.*)$",
+    "^@/sections/(.*)$",
+    "^[./]"
+  ],
+  "tabWidth": 4,
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
+}

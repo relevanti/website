@@ -32,7 +32,7 @@ const FlowUp = () => {
         padding: "10px",
       }}
     >
-      <div style={{ width: "80%", height: "90%" }}>
+      <div style={{ width: "80%", height: "90%", cursor: "default" }}>
         <ReactFlow
           nodes={nodes}
           edges={edges}
@@ -47,6 +47,10 @@ const FlowUp = () => {
           zoomOnPinch={false}
           panOnDrag={false}
           zoomOnDoubleClick={false}
+          preventScrolling={false}
+          nodesDraggable={false}
+          nodesConnectable={false}
+          elementsSelectable={false}
           proOptions={{ hideAttribution: true }}
         />
       </div>
