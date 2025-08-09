@@ -2,10 +2,10 @@ import "./EventsSection.css"
 
 import EventItem from "./EventItem"
 
-type EventStatus = "Летом" | "Действует" | "Идет набор"
+type EventStatus = "Этим летом" | "Действует" | "Идет набор"
 
 const statusClassMap: Record<EventStatus, string> = {
-  Летом: "planned",
+  "Этим летом": "planned",
   Действует: "active",
   "Идет набор": "recruiting",
 }
@@ -49,7 +49,7 @@ const eventsData: Event[] = [
   },
   {
     status: "Идет набор",
-    title: "Развитие коммуникативных навыков ",
+    title: "Развитие речи ",
     description:
       "Самопрезентация, навыки продаж,публичные выступления, сторителлинг, письменная речь. Практические занятия, сессии.",
     regularity: "1 раз в неделю",
@@ -69,7 +69,7 @@ const eventsData: Event[] = [
     regularity: "Онлайн встречи 1 раз в неделю",
   },
   {
-    status: "Летом",
+    status: "Этим летом",
     title: "Сборы",
     description:
       "Собираемся вместе для реализации краткосрочного проекта. Например, поучаствовать в хакатоне или сходить в поход. ",
@@ -81,7 +81,13 @@ const eventsData: Event[] = [
 function EventsSection() {
   return (
     <div className="events-container">
-      <div className="sidebar">Наши события</div>
+      <div className="sidebar">
+          <h4>Наши события</h4>
+        <p className="description">
+          Это не просто полезные занятия, но способ узнать друг друга в деле.
+          Поэтому все мероприятия обязательны и доступны только для участников сообщества.
+        </p>
+      </div>
       <div className="events">
         <div className="box">
           {eventsData.map((event, index) => (

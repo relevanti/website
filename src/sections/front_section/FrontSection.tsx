@@ -9,7 +9,7 @@ const FrontSection: React.FC = () => {
         <img src="/logo_no_text.svg" alt="Logo" className="logo-image" />
         <p className="community-title">RELEVANTI</p>
         <p className="description">
-          Клуб людей, вместе стремящихся <br /> прожить невероятную жизнь
+          Сообщество людей, вместе стремящихся <br /> прожить невероятную жизнь
         </p>
         <a href="/#join" className="join-button">
           Вступить
