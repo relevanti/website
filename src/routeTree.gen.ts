@@ -12,7 +12,7 @@
 
 import { Route as rootRoute } from './routes/__root'
 import { Route as StrategyImport } from './routes/strategy'
-import { Route as QuestionImport } from './routes/question'
+import { Route as FaqImport } from './routes/faq'
 import { Route as CommunityImport } from './routes/community'
 import { Route as IndexImport } from './routes/index'
 
@@ -24,9 +24,9 @@ const StrategyRoute = StrategyImport.update({
   getParentRoute: () => rootRoute,
 } as any)
 
-const QuestionRoute = QuestionImport.update({
-  id: '/question',
-  path: '/question',
+const FaqRoute = FaqImport.update({
+  id: '/faq',
+  path: '/faq',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -60,11 +60,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CommunityImport
       parentRoute: typeof rootRoute
     }
-    '/question': {
-      id: '/question'
-      path: '/question'
-      fullPath: '/question'
-      preLoaderRoute: typeof QuestionImport
+    '/faq': {
+      id: '/faq'
+      path: '/faq'
+      fullPath: '/faq'
+      preLoaderRoute: typeof FaqImport
       parentRoute: typeof rootRoute
     }
     '/strategy': {
@@ -82,14 +82,14 @@ declare module '@tanstack/react-router' {
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/community': typeof CommunityRoute
-  '/question': typeof QuestionRoute
+  '/faq': typeof FaqRoute
   '/strategy': typeof StrategyRoute
 }
 
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/community': typeof CommunityRoute
-  '/question': typeof QuestionRoute
+  '/faq': typeof FaqRoute
   '/strategy': typeof StrategyRoute
 }
 
@@ -97,30 +97,30 @@ export interface FileRoutesById {
   __root__: typeof rootRoute
   '/': typeof IndexRoute
   '/community': typeof CommunityRoute
-  '/question': typeof QuestionRoute
+  '/faq': typeof FaqRoute
   '/strategy': typeof StrategyRoute
 }
 
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/community' | '/question' | '/strategy'
+  fullPaths: '/' | '/community' | '/faq' | '/strategy'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/community' | '/question' | '/strategy'
-  id: '__root__' | '/' | '/community' | '/question' | '/strategy'
+  to: '/' | '/community' | '/faq' | '/strategy'
+  id: '__root__' | '/' | '/community' | '/faq' | '/strategy'
   fileRoutesById: FileRoutesById
 }
 
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CommunityRoute: typeof CommunityRoute
-  QuestionRoute: typeof QuestionRoute
+  FaqRoute: typeof FaqRoute
   StrategyRoute: typeof StrategyRoute
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CommunityRoute: CommunityRoute,
-  QuestionRoute: QuestionRoute,
+  FaqRoute: FaqRoute,
   StrategyRoute: StrategyRoute,
 }
 
@@ -136,7 +136,7 @@ export const routeTree = rootRoute
       "children": [
         "/",
         "/community",
-        "/question",
+        "/faq",
         "/strategy"
       ]
     },
@@ -146,8 +146,8 @@ export const routeTree = rootRoute
     "/community": {
       "filePath": "community.tsx"
     },
-    "/question": {
-      "filePath": "question.tsx"
+    "/faq": {
+      "filePath": "faq.tsx"
     },
     "/strategy": {
       "filePath": "strategy.tsx"

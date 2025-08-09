@@ -3,7 +3,7 @@ import BigFooterSection from "@/sections/big_footer/BigFooterSection"
 import Question from "@/sections/question/Question"
 import { createFileRoute } from "@tanstack/react-router"
 
-export const Route = createFileRoute("/question")({
+export const Route = createFileRoute("/faq")({
   component: Community,
 })
 

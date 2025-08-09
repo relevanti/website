@@ -38,7 +38,7 @@ const WideHeader: React.FC<WideHeaderProps> = ({ isScrolled }) => {
           Стратегия
         </Link>
         <Link
-          to="/question"
+          to="/faq"
           className="item"
           activeProps={{ className: "item active" }}
         >
