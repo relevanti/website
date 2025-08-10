@@ -3,20 +3,9 @@
   "singleQuote": false,
   "trailingComma": "es5",
   "endOfLine": "auto",
-  "plugins": [
-    "prettier-plugin-import-sort"
-  ],
-  "importOrder": [
-    "^react",
-    "^@?\\w",
-    "^@/components/(.*)$",
-    "^@/hooks/(.*)$",
-    "^@/utils/(.*)$",
-    "^@/context/(.*)$",
-    "^@/sections/(.*)$",
-    "^[./]"
-  ],
-  "tabWidth": 4,
-  "importOrderSeparation": true,
-  "importOrderSortSpecifiers": true
+  "tabWidth": 2,
+  "printWidth": 100,
+  "arrowParens": "always",
+  "proseWrap": "always",
+  "htmlWhitespaceSensitivity": "css"
 }

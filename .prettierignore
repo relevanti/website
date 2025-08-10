@@ -1,1 +1,9 @@
-routeTree.gen.ts
+dist
+node_modules
+src/routeTree.gen.ts
+*.min.js
+*.min.css
+public
+.git
+.vscode
+package-lock.json
