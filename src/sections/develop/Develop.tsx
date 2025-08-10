@@ -1,6 +1,6 @@
-import "./Develop.css"
-
 import React from "react"
+
+import "./Develop.css"
 
 interface TimelineItem {
   id: number
@@ -21,8 +21,7 @@ const DevelopmentPrioritiesTimeline: React.FC = () => {
       id: 2,
       year: "2026",
       title: "Становление команды",
-      description:
-        "учимся работать вместе, решая актуальные проблемы друг друга",
+      description: "учимся работать вместе, решая актуальные проблемы друг друга",
     },
     {
       id: 3,
@@ -35,8 +34,7 @@ const DevelopmentPrioritiesTimeline: React.FC = () => {
       id: 4,
       year: "2030",
       title: "Стратегические проекты",
-      description:
-        "запускаем инвестиционные проекты, преумножаем капитал сообщества",
+      description: "запускаем инвестиционные проекты, преумножаем капитал сообщества",
     },
     {
       id: 5,

@@ -1,16 +1,13 @@
-import "./MenuToggleButton.css"
-
 import * as React from "react"
+
+import "./MenuToggleButton.css"
 
 interface MenuToggleButtonProps {
   isOpen: boolean
   onClick: () => void
 }
 
-const MenuToggleButton: React.FC<MenuToggleButtonProps> = ({
-  isOpen,
-  onClick,
-}) => {
+const MenuToggleButton: React.FC<MenuToggleButtonProps> = ({ isOpen, onClick }) => {
   return (
     <button className={`menu-toggle-button`} onClick={onClick}>
       <div className={`line top ${isOpen ? "open" : ""}`}></div>

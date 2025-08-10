@@ -1,6 +1,6 @@
-import "./EventItem.css"
-
 import * as React from "react"
+
+import "./EventItem.css"
 
 interface Event {
   status: string

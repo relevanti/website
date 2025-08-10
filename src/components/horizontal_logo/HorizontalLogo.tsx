@@ -1,6 +1,6 @@
-import "./HorizontalLogo.css"
-
 import * as React from "react"
+
+import "./HorizontalLogo.css"
 
 interface HorizontalLogoProps {
   expand: boolean

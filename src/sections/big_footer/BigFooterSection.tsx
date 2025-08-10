@@ -1,6 +1,6 @@
-import "./BigFooterSection.css"
-
 import * as React from "react"
+
+import "./BigFooterSection.css"
 
 const BigFooterSection: React.FC = () => {
   return (

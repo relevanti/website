@@ -7,5 +7,19 @@
   "printWidth": 100,
   "arrowParens": "always",
   "proseWrap": "always",
-  "htmlWhitespaceSensitivity": "css"
+  "htmlWhitespaceSensitivity": "css",
+  "plugins": ["@trivago/prettier-plugin-sort-imports"],
+  "importOrder": [
+    "^react",
+    "^@?\\w",
+    "^@/components/(.*)$",
+    "^@/hooks/(.*)$",
+    "^@/utils/(.*)$",
+    "^@/sections/(.*)$",
+    "^@/(.*)$",
+    "^[./]",
+    "^.+\\.css$"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
 }

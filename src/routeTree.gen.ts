@@ -10,67 +10,67 @@
 
 // Import Routes
 
-import { Route as rootRoute } from './routes/__root'
-import { Route as StrategyImport } from './routes/strategy'
-import { Route as FaqImport } from './routes/faq'
-import { Route as CommunityImport } from './routes/community'
-import { Route as IndexImport } from './routes/index'
+import { Route as rootRoute } from "./routes/__root"
+import { Route as StrategyImport } from "./routes/strategy"
+import { Route as FaqImport } from "./routes/faq"
+import { Route as CommunityImport } from "./routes/community"
+import { Route as IndexImport } from "./routes/index"
 
 // Create/Update Routes
 
 const StrategyRoute = StrategyImport.update({
-  id: '/strategy',
-  path: '/strategy',
+  id: "/strategy",
+  path: "/strategy",
   getParentRoute: () => rootRoute,
 } as any)
 
 const FaqRoute = FaqImport.update({
-  id: '/faq',
-  path: '/faq',
+  id: "/faq",
+  path: "/faq",
   getParentRoute: () => rootRoute,
 } as any)
 
 const CommunityRoute = CommunityImport.update({
-  id: '/community',
-  path: '/community',
+  id: "/community",
+  path: "/community",
   getParentRoute: () => rootRoute,
 } as any)
 
 const IndexRoute = IndexImport.update({
-  id: '/',
-  path: '/',
+  id: "/",
+  path: "/",
   getParentRoute: () => rootRoute,
 } as any)
 
 // Populate the FileRoutesByPath interface
 
-declare module '@tanstack/react-router' {
+declare module "@tanstack/react-router" {
   interface FileRoutesByPath {
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
+    "/": {
+      id: "/"
+      path: "/"
+      fullPath: "/"
       preLoaderRoute: typeof IndexImport
       parentRoute: typeof rootRoute
     }
-    '/community': {
-      id: '/community'
-      path: '/community'
-      fullPath: '/community'
+    "/community": {
+      id: "/community"
+      path: "/community"
+      fullPath: "/community"
       preLoaderRoute: typeof CommunityImport
       parentRoute: typeof rootRoute
     }
-    '/faq': {
-      id: '/faq'
-      path: '/faq'
-      fullPath: '/faq'
+    "/faq": {
+      id: "/faq"
+      path: "/faq"
+      fullPath: "/faq"
       preLoaderRoute: typeof FaqImport
       parentRoute: typeof rootRoute
     }
-    '/strategy': {
-      id: '/strategy'
-      path: '/strategy'
-      fullPath: '/strategy'
+    "/strategy": {
+      id: "/strategy"
+      path: "/strategy"
+      fullPath: "/strategy"
       preLoaderRoute: typeof StrategyImport
       parentRoute: typeof rootRoute
     }
@@ -80,33 +80,33 @@ declare module '@tanstack/react-router' {
 // Create and export the route tree
 
 export interface FileRoutesByFullPath {
-  '/': typeof IndexRoute
-  '/community': typeof CommunityRoute
-  '/faq': typeof FaqRoute
-  '/strategy': typeof StrategyRoute
+  "/": typeof IndexRoute
+  "/community": typeof CommunityRoute
+  "/faq": typeof FaqRoute
+  "/strategy": typeof StrategyRoute
 }
 
 export interface FileRoutesByTo {
-  '/': typeof IndexRoute
-  '/community': typeof CommunityRoute
-  '/faq': typeof FaqRoute
-  '/strategy': typeof StrategyRoute
+  "/": typeof IndexRoute
+  "/community": typeof CommunityRoute
+  "/faq": typeof FaqRoute
+  "/strategy": typeof StrategyRoute
 }
 
 export interface FileRoutesById {
   __root__: typeof rootRoute
-  '/': typeof IndexRoute
-  '/community': typeof CommunityRoute
-  '/faq': typeof FaqRoute
-  '/strategy': typeof StrategyRoute
+  "/": typeof IndexRoute
+  "/community": typeof CommunityRoute
+  "/faq": typeof FaqRoute
+  "/strategy": typeof StrategyRoute
 }
 
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/community' | '/faq' | '/strategy'
+  fullPaths: "/" | "/community" | "/faq" | "/strategy"
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/community' | '/faq' | '/strategy'
-  id: '__root__' | '/' | '/community' | '/faq' | '/strategy'
+  to: "/" | "/community" | "/faq" | "/strategy"
+  id: "__root__" | "/" | "/community" | "/faq" | "/strategy"
   fileRoutesById: FileRoutesById
 }
 

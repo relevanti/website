@@ -1,6 +1,5 @@
-import "./EventsSection.css"
-
 import EventItem from "./EventItem"
+import "./EventsSection.css"
 
 type EventStatus = "Этим летом" | "Действует" | "Идет набор"
 
@@ -21,8 +20,7 @@ const eventsData: Event[] = [
   {
     status: "Действует",
     title: "Мастермайнд-группа",
-    description:
-      "Строго модерируемые встречи, направленные на преодоление текущих затруднений.",
+    description: "Строго модерируемые встречи, направленные на преодоление текущих затруднений.",
     regularity: "Ежедневные короткие звонки \n(до 15 мин)",
   },
   {
@@ -73,8 +71,7 @@ const eventsData: Event[] = [
     title: "Сборы",
     description:
       "Собираемся вместе для реализации краткосрочного проекта. Например, поучаствовать в хакатоне или сходить в поход. ",
-    regularity:
-      "2-4 дня без работы, или до 2 недель, совмещая с работой. \nОколо 2 раз в год",
+    regularity: "2-4 дня без работы, или до 2 недель, совмещая с работой. \nОколо 2 раз в год",
   },
 ]
 
@@ -82,20 +79,16 @@ function EventsSection() {
   return (
     <div className="events-container">
       <div className="sidebar">
-          <h4>Наши события</h4>
+        <h4>Наши события</h4>
         <p className="description">
-          Это не просто полезные занятия, но и способ узнать друг друга в деле.
-          Поэтому все мероприятия обязательны и доступны только для участников сообщества.
+          Это не просто полезные занятия, но и способ узнать друг друга в деле. Поэтому все
+          мероприятия обязательны и доступны только для участников сообщества.
         </p>
       </div>
       <div className="events">
         <div className="box">
           {eventsData.map((event, index) => (
-            <EventItem
-              key={index}
-              event={event}
-              statusClass={statusClassMap[event.status]}
-            />
+            <EventItem key={index} event={event} statusClass={statusClassMap[event.status]} />
           ))}
         </div>
       </div>

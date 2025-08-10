@@ -1,15 +1,9 @@
-import "reactflow/dist/style.css"
-
 import React from "react"
 import ReactFlow, { Edge, Node } from "reactflow"
+import "reactflow/dist/style.css"
 
 import { CustomTextNode, CustomTextNode2 } from "./CustomTextNode"
-import {
-  desktopEdges,
-  desktopNodes,
-  mobileEdges,
-  mobileNodes,
-} from "./nodes/nodesCenter"
+import { desktopEdges, desktopNodes, mobileEdges, mobileNodes } from "./nodes/nodesCenter"
 import { useIsMobile } from "./useIsMobile"
 
 const nodeTypes = {

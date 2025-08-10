@@ -1,6 +1,6 @@
-import "./JuicyHeader.css"
-
 import * as React from "react"
+
+import "./JuicyHeader.css"
 
 interface JuicyHeaderProps {
   backgroundImage: string

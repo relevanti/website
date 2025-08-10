@@ -1,6 +1,5 @@
-import "./PrinciplesSection.css"
-
 import PrincipleItem from "./PrincipleItem"
+import "./PrinciplesSection.css"
 
 export default function PrinciplesSection() {
   return (

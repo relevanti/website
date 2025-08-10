@@ -1,6 +1,11 @@
-import "./FakeContent.css" // Import CSS for styling
-
+// Import CSS for styling
 import * as React from "react"
+
+import "./FakeContent.css"
+
+
+
+
 
 const FakeContent: React.FC = () => {
   return (
@@ -15,15 +20,11 @@ const FakeContent: React.FC = () => {
       </section>
       <section className="section" id="services">
         <h1>Services Section</h1>
-        <p>
-          This is the services section. Continue scrolling for more content.
-        </p>
+        <p>This is the services section. Continue scrolling for more content.</p>
       </section>
       <section className="section" id="contact">
         <h1>Contact Section</h1>
-        <p>
-          This is the contact section. You've reached the end of the content.
-        </p>
+        <p>This is the contact section. You've reached the end of the content.</p>
       </section>
     </div>
   )

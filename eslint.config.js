@@ -3,7 +3,6 @@ import jsxA11y from "eslint-plugin-jsx-a11y"
 import prettier from "eslint-plugin-prettier"
 import reactHooks from "eslint-plugin-react-hooks"
 import reactRefresh from "eslint-plugin-react-refresh"
-import simpleImportSort from "eslint-plugin-simple-import-sort"
 import globals from "globals"
 import tseslint from "typescript-eslint"
 
@@ -21,7 +20,6 @@ export default tseslint.config(
       "react-refresh": reactRefresh,
       "jsx-a11y": jsxA11y,
       prettier: prettier,
-      "simple-import-sort": simpleImportSort,
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
@@ -37,38 +35,7 @@ export default tseslint.config(
           varsIgnorePattern: "^_",
         },
       ],
-      "prettier/prettier": [
-        "error",
-        {
-          semi: false,
-          singleQuote: false,
-          trailingComma: "es5",
-          endOfLine: "auto",
-          tabWidth: 2,
-          printWidth: 100,
-          arrowParens: "always",
-        },
-      ],
-      "simple-import-sort/imports": [
-        "error",
-        {
-          groups: [
-            // Side effect imports
-            ["^\\u0000"],
-            // React and related
-            ["^react", "^@?\\w"],
-            // Internal packages
-            ["^@/"],
-            // Parent imports
-            ["^\\.\\.(?!/?$)", "^\\.\\./?$"],
-            // Other relative imports
-            ["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"],
-            // Style imports
-            ["^.+\\.css$"],
-          ],
-        },
-      ],
-      "simple-import-sort/exports": "error",
+      "prettier/prettier": "error",
     },
     settings: {
       react: {

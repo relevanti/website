@@ -21,11 +21,7 @@ export const FlowSection: React.FC = () => {
         Пути развития целей
       </h1>
 
-      <section
-        className="flow-section"
-        id="flow-up"
-        style={{ marginTop: "30px" }}
-      >
+      <section className="flow-section" id="flow-up" style={{ marginTop: "30px" }}>
         <FlowUp />
       </section>
 

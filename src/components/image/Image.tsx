@@ -1,6 +1,6 @@
-import "./Image.css"
-
 import { useEffect, useRef, useState } from "react"
+
+import "./Image.css"
 
 interface ImageProps {
   src: string

@@ -1,6 +1,6 @@
-import "./VennDiagram.css"
-
 import React from "react"
+
+import "./VennDiagram.css"
 
 const VennDiagram: React.FC = () => {
   return (
@@ -8,33 +8,21 @@ const VennDiagram: React.FC = () => {
       {/* Top Circle - Reliable Community */}
       <div className="venn-circle venn-circle--top">
         <div className="venn-icon-wrapper">
-          <img
-            src="/images/hand.webp"
-            alt="HandShake"
-            className="venn-icon-image"
-          />
+          <img src="/images/hand.webp" alt="HandShake" className="venn-icon-image" />
         </div>
       </div>
 
       {/* Bottom Left Circle - Health and Longevity */}
       <div className="venn-circle venn-circle--bottom-left">
         <div className="venn-icon-wrapper">
-          <img
-            src="/images/apple.webp"
-            alt="Health"
-            className="venn-icon-image"
-          />
+          <img src="/images/apple.webp" alt="Health" className="venn-icon-image" />
         </div>
       </div>
 
       {/* Bottom Right Circle - Financial Independence */}
       <div className="venn-circle venn-circle--bottom-right">
         <div className="venn-icon-wrapper">
-          <img
-            src="/images/moneybag.webp"
-            alt="Money"
-            className="venn-icon-image"
-          />
+          <img src="/images/moneybag.webp" alt="Money" className="venn-icon-image" />
         </div>
       </div>
 

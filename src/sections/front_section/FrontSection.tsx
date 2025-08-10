@@ -1,6 +1,6 @@
-import "./FrontSection.css"
-
 import * as React from "react"
+
+import "./FrontSection.css"
 
 const FrontSection: React.FC = () => {
   return (
@@ -14,9 +14,7 @@ const FrontSection: React.FC = () => {
         <a href="/#join" className="join-button">
           Вступить
         </a>
-        <p className="main-points">
-          капитал • долголетие • надежные люди рядом
-        </p>
+        <p className="main-points">капитал • долголетие • надежные люди рядом</p>
       </div>
     </section>
   )

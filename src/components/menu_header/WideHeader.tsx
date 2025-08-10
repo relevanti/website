@@ -1,8 +1,10 @@
-import "./WideHeader.css"
+import * as React from "react"
+
+import { Link } from "@tanstack/react-router"
 
 import HorizontalLogo from "@/components/horizontal_logo/HorizontalLogo"
-import { Link } from "@tanstack/react-router"
-import * as React from "react"
+
+import "./WideHeader.css"
 
 interface WideHeaderProps {
   isScrolled: boolean
@@ -15,33 +17,17 @@ const WideHeader: React.FC<WideHeaderProps> = ({ isScrolled }) => {
         <HorizontalLogo expand={false} size={54} />
       </div>
       <nav className="center">
-        <Link
-          to="/"
-          className="item"
-          activeProps={{ className: "item active" }}
-        >
+        <Link to="/" className="item" activeProps={{ className: "item active" }}>
           Главная
         </Link>
-        <Link
-          to="/community"
-          className="item"
-          activeProps={{ className: "item active" }}
-        >
+        <Link to="/community" className="item" activeProps={{ className: "item active" }}>
           Сообщество
         </Link>
 
-        <Link
-          to="/strategy"
-          className="item"
-          activeProps={{ className: "item active" }}
-        >
+        <Link to="/strategy" className="item" activeProps={{ className: "item active" }}>
           Стратегия
         </Link>
-        <Link
-          to="/faq"
-          className="item"
-          activeProps={{ className: "item active" }}
-        >
+        <Link to="/faq" className="item" activeProps={{ className: "item active" }}>
           Вопросы
         </Link>
         {/* <Link to="/strategy" className="item">

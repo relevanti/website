@@ -1,6 +1,6 @@
-import "./PrincipleItem.css"
-
 import { ReactNode } from "react"
+
+import "./PrincipleItem.css"
 
 interface PrincipleItemProps {
   children: ReactNode

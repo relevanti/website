@@ -1,6 +1,7 @@
-import useIsMobile from "@/hooks/useIsMobile"
 import * as React from "react"
 import { useEffect, useState } from "react"
+
+import useIsMobile from "@/hooks/useIsMobile"
 
 import ThinHeader from "./ThinHeader"
 import WideHeader from "./WideHeader"
@@ -25,11 +26,7 @@ const Header: React.FC = () => {
 
   return (
     <>
-      {isMobile ? (
-        <ThinHeader isScrolled={isScrolled} />
-      ) : (
-        <WideHeader isScrolled={isScrolled} />
-      )}
+      {isMobile ? <ThinHeader isScrolled={isScrolled} /> : <WideHeader isScrolled={isScrolled} />}
     </>
   )
 }

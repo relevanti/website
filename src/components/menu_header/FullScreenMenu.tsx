@@ -1,7 +1,8 @@
-import "./FullScreenMenu.css"
+import * as React from "react"
 
 import { Link } from "@tanstack/react-router"
-import * as React from "react"
+
+import "./FullScreenMenu.css"
 
 interface FullScreenMenuProps {
   isOpen: boolean
@@ -29,11 +30,7 @@ const FullScreenMenu: React.FC<FullScreenMenuProps> = ({ isOpen, onClose }) => {
         {/*</Link>*/}
 
         <div className="join-button-container">
-          <a
-            href="https://chat.relevanti.org/#/login"
-            className="login-button"
-            onClick={onClose}
-          >
+          <a href="https://chat.relevanti.org/#/login" className="login-button" onClick={onClose}>
             Вход
           </a>
           <Link to="/" hash="join" className="join-button" onClick={onClose}>

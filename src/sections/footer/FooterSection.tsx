@@ -1,6 +1,6 @@
-import "./FooterSection.css"
-
 import * as React from "react"
+
+import "./FooterSection.css"
 
 const FooterSection: React.FC = () => {
   return (

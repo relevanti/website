@@ -1,8 +1,10 @@
+import { createFileRoute } from "@tanstack/react-router"
+
 import JuicyHeader from "@/components/juicy_header/JuicyHeader"
+
 import BigFooterSection from "@/sections/big_footer/BigFooterSection"
 import DevelopmentPrioritiesTimeline from "@/sections/develop/Develop"
 import OurGoals from "@/sections/our_goals/OurGoals"
-import {createFileRoute} from "@tanstack/react-router"
 
 export const Route = createFileRoute("/strategy")({
   component: Strategy,

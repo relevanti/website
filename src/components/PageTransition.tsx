@@ -1,7 +1,8 @@
-import "./PageTransition.css"
+import * as React from "react"
 
 import { Outlet } from "@tanstack/react-router"
-import * as React from "react"
+
+import "./PageTransition.css"
 
 const PageTransition: React.FC = () => {
   return (

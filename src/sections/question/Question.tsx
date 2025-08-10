@@ -1,6 +1,6 @@
-import "./Question.css"
-
 import React, { useState } from "react"
+
+import "./Question.css"
 
 interface QuestionItem {
   title: string
@@ -66,7 +66,7 @@ const Question: React.FC = () => {
     },
     {
       title: "А что после достижения результата?",
-      body: "Финансовая свобода → свободная жизнь → новый трек. Можно остаться, запустить новые проекты, или уйти в одиночное плавание. Главное — дойти до финиша."
+      body: "Финансовая свобода → свободная жизнь → новый трек. Можно остаться, запустить новые проекты, или уйти в одиночное плавание. Главное — дойти до финиша.",
     },
   ]
 
@@ -103,9 +103,7 @@ const Question: React.FC = () => {
               }}
             >
               <span className="question-text">{item.title}</span>
-              <span
-                className={`toggle-icon ${openIndex === index ? "toggle-icon-active" : ""}`}
-              >
+              <span className={`toggle-icon ${openIndex === index ? "toggle-icon-active" : ""}`}>
                 +
               </span>
             </button>
