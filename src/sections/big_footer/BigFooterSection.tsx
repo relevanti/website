@@ -14,7 +14,7 @@ const BigFooterSection: React.FC = () => {
           <br />
           3. Покажи заинтересованность действием
         </p>
-        <a href="https://relevanti.org/apply" className="join-button">
+        <a href="https://forms.gle/1sfCgMKZgpaAAcpT9" className="join-button">
           Вступить
         </a>
       </div>
