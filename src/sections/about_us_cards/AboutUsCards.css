@@ -33,6 +33,7 @@
     object-fit: cover;
     margin-bottom: 0.5em;
     border-radius: 6px;
+    opacity: 0.9;
 }
 
 .about-us-card p {
