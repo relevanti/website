@@ -2,7 +2,7 @@ name: Deploy to REG.RU via FTPS
 
 on:
   push:
-    branches: [ master ]     # или ваша прод-ветка
+    branches: [ master ]
   workflow_dispatch:
 
 permissions:
@@ -17,7 +17,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+        uses: actions/checkout@v4
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -31,13 +31,12 @@ jobs:
       - name: Build
         run: npm run build
 
-      # гарантируем, что .htaccess попадёт в дистрибутив
       - name: Copy .htaccess into dist
         run: |
           if [ -f .htaccess ]; then cp .htaccess dist/.htaccess; fi
 
       - name: Deploy via FTPS
-        uses: SamKirkland/FTP-Deploy-Action@v4
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
@@ -50,3 +49,4 @@ jobs:
             **/.git*
             **/.github*
             **/node_modules/**
+          # log-level: verbose
