@@ -41,12 +41,17 @@ const WideHeader: React.FC<WideHeaderProps> = ({ isScrolled }) => {
         {/*<Link to="/partnership" className="item">*/}
         {/*  Партнерство*/}
         {/*</Link>*/}
-        <Link to="/" hash="join" className="join-button">
+        <Link
+          to="/"
+          hash="join"
+          className="join-button"
+          activeProps={{ className: "join-button active" }}
+        >
           Вступить
         </Link>
-        <a href="https://chat.relevanti.org/#/login" className="item">
+        {/* <a href="https://chat.relevanty.org/#/login" className="item">
           Вход
-        </a>
+        </a> */}
       </nav>
     </header>
   )
