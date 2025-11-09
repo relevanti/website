@@ -33,7 +33,7 @@
     width: 20rem;
     height: auto;
     padding-top: 14em;
-    margin-bottom: 1em;
+    margin-bottom: 5em;
     filter: brightness(20) saturate(0);
     z-index: 2;
 }

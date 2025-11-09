@@ -7,7 +7,7 @@ const FooterSection: React.FC = () => {
     <section id="join" className="footer-section">
       <div className="footer-content">
         <div className="footer-contact-details">
-          <p>hello@relevanti.org</p>
+          {/* <p>hello@relevanty.org</p> */}
           <p>© 2025 Сообщество Релеванты</p>
         </div>
       </div>
