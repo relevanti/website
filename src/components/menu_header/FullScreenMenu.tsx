@@ -33,8 +33,8 @@ const FullScreenMenu: React.FC<FullScreenMenuProps> = ({ isOpen, onClose }) => {
           {/* <a href="https://chat.relevanty.org/#/login" className="login-button" onClick={onClose}>
             Вход
           </a> */}
-          <Link to="/" hash="join" className="join-button" onClick={onClose}>
-            Вступить
+          <Link to="/apply" className="join-button" onClick={onClose}>
+            Познакомиться с нами
           </Link>
         </div>
       </nav>

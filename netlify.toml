@@ -1,11 +1,4 @@
 [[redirects]]
-  from = "/apply"
-  to = "https://t.me/RELEVANTY_CLUB"
-  status = 200
-  force = true
-
-# SPA redirect - must be last
-[[redirects]]
   from = "/*"
   to = "/"
   status = 200
