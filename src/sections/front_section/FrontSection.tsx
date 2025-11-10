@@ -11,8 +11,8 @@ const FrontSection: React.FC = () => {
         <p className="description">
           Сообщество людей, вместе стремящихся <br /> прожить невероятную жизнь
         </p>
-        <a href="/#join" className="join-button">
-          Вступить
+        <a href="/apply" className="join-button">
+          Познакомиться с нами
         </a>
         <p className="main-points">капитал • долголетие • надежные люди рядом</p>
       </div>

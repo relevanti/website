@@ -2,14 +2,13 @@ import { useEffect } from "react"
 
 import { createFileRoute } from "@tanstack/react-router"
 
+import { buildRandomTarget } from "@/utils/clubLinks"
+
 export const Route = createFileRoute("/apply")({
   component: () => {
     useEffect(() => {
-      const base = "https://t.me/RELEVANTY_CLUB"
-      const url = new URL(base)
-      if (window.location.search) url.search = window.location.search
-      if (window.location.hash) url.hash = window.location.hash
-      window.location.replace(url.toString())
+      const target = buildRandomTarget()
+      window.location.replace(target)
     }, [])
     return null
   },
