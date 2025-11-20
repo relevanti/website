@@ -16,6 +16,7 @@
     height: auto;
     margin-right: 0.5em;
     filter: brightness(7) saturate(0);
+    display: none;
 }
 
 .horizontal-logo .logo-text {
@@ -23,4 +24,5 @@
     font-weight: 400;
     letter-spacing: 0.02em;
     font-family: "ReneSansCyr", sans-serif;
+    display: none;
 }

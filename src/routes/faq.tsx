@@ -12,7 +12,7 @@ export const Route = createFileRoute("/faq")({
 function Community() {
   return (
     <div className="page-content">
-      <JuicyHeader backgroundImage="/images/faq.webp" backgroundPosition="center 40%" title="FAQ" />
+      <JuicyHeader backgroundImage="/public/images/team.png" backgroundPosition="center 30%" title="FAQ" />
       <Question />
       <BigFooterSection />
     </div>

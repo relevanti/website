@@ -14,7 +14,7 @@ function Strategy() {
   return (
     <div className="page-content">
       <JuicyHeader
-        backgroundImage="/images/strategy.webp"
+        backgroundImage="/public/images/strategy1.png"
         backgroundPosition="center 40%"
         title="Стратегия"
       />

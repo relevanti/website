@@ -12,13 +12,13 @@
 }
 
 .wide-menu-header.scrolled {
-    background-color: #1d2633;
+    background-color: #001748;
     height: 6vh;
 }
 
 .wide-menu-header:not(.scrolled) {
-    background-color: transparent;
-    height: 10vh;
+    background-color: #001748;
+    height: 6vh;
 }
 
 .wide-menu-header .center {
@@ -27,6 +27,7 @@
     transform: translateX(-50%);
     display: flex;
     gap: 20px;
+    font-size: 25px;
 }
 
 .wide-menu-header .left,
@@ -76,9 +77,9 @@
     font-family: "ReneSansCyr", sans-serif;
     font-weight: 600;
     border-radius: 10px;
-    background-color: #ffffff;
+    background-color: #408ade;
     padding: 0.3rem 2.5rem;
-    color: #1d2633;
+    color: #ffffff;
 }
 
 .wide-menu-header:not(.scrolled) .center .item,

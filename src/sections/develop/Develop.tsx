@@ -13,19 +13,19 @@ const DevelopmentPrioritiesTimeline: React.FC = () => {
   const timelineData: TimelineItem[] = [
     {
       id: 1,
-      year: "2025",
+      year: "2026",
       title: "Формирование команды",
       description: "находим целеустремленных единомышленников",
     },
     {
       id: 2,
-      year: "2026",
+      year: "2027",
       title: "Становление команды",
       description: "учимся работать вместе, решая актуальные проблемы друг друга",
     },
     {
       id: 3,
-      year: "2027",
+      year: "2028",
       title: "Накопление ресурсов",
       description:
         "получаем знания, строим карьеру, создаем сеть знакомств, собираем стартовый капитал",
