@@ -21,7 +21,7 @@ const BigFooterSection: React.FC = () => {
       </div>
       <div className="big-footer-content">
       <div className="big-footer-logo">
-  <img src="/public/logo.svg" alt="logo small" className="small-footer-img" />
+  <img src="logo.svg" alt="logo small" className="small-footer-img" />
 </div>
         <div className="big-footer-contact-details">
           <p>© 2025 Сообщество Релеванты</p>
