@@ -13,7 +13,7 @@ function Community() {
   return (
     <div className="page-content">
       <JuicyHeader
-        backgroundImage="/images/team_working.webp"
+        backgroundImage="/public/images/comm.png"
         backgroundPosition="center 40%"
         title="Сообщество"
       />
