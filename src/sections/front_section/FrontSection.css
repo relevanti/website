@@ -11,7 +11,23 @@
     position: relative;
     overflow: hidden;
 }
+@media (max-width: 768px) {
+    .front-section {
+        background-image: url("public/images/mainPhone.png");
+    }
 
+    .front-section .logo-image {
+        width: 1rem;
+    }
+
+    .front-section .community-title {
+        font-size: 2.7rem;
+    }
+
+    .front-section .join-button {
+        visibility: visible;
+    }
+}
 .front-section::before {
     content: "";
     position: absolute;
