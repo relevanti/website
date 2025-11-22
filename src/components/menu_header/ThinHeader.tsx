@@ -18,8 +18,6 @@ const ThinHeader: React.FC<ThinHeaderProps> = ({ isScrolled }) => {
 
   return (
     <header className={`thin-menu-header ${isScrolled || menuOpen ? "scrolled" : ""}`}>
-      <img src="/logo.svg" alt="Logo" className="logo-image left" />
-      <span className="logo-text center">RELEVANTY</span>
       <MenuToggleButton isOpen={menuOpen} onClick={toggleMenu} />
       <FullScreenMenu isOpen={menuOpen} onClose={toggleMenu} />
     </header>
