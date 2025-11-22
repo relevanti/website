@@ -1,26 +1,13 @@
-import "./FooterSection.css"
+import * as React from "react"
 
-import React from "react"
+import "./FooterSection.css"
 
 const FooterSection: React.FC = () => {
   return (
     <section id="join" className="footer-section">
-      <div className="enroll-section">
-        <h2 className="footer-header">Мы ждали тебя</h2>
-        <p className="footer-paragraph">
-          1. Заполни форму по ссылке
-          <br />
-          2. Обсуди концепцию на собеседовании
-          <br />
-          3. Покажи заинтересованность действием
-        </p>
-        <a href="https://relevanti.org/apply" className="join-button">
-          Вступить
-        </a>
-      </div>
       <div className="footer-content">
-        <div className="contact-details">
-          <p>contact@relevanti.org</p>
+        <div className="footer-contact-details">
+          {/* <p>hello@relevanty.org</p> */}
           <p>© 2025 Сообщество Релеванты</p>
         </div>
       </div>

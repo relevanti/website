@@ -1,6 +1,8 @@
-import "./FullScreenMenu.css"
+import * as React from "react"
 
-import React from "react"
+import { Link } from "@tanstack/react-router"
+
+import "./FullScreenMenu.css"
 
 interface FullScreenMenuProps {
   isOpen: boolean
@@ -11,33 +13,29 @@ const FullScreenMenu: React.FC<FullScreenMenuProps> = ({ isOpen, onClose }) => {
   return (
     <div className={`full-screen-menu ${isOpen ? "open" : ""}`}>
       <nav className="full-screen-nav">
-        {/*<a href="/" className="menu-header-item" onClick={onClose}>*/}
-        {/*  Главная*/}
-        {/*</a>*/}
-        {/*<a href="/community" className="menu-header-item" onClick={onClose}>*/}
-        {/*  Сообщество*/}
-        {/*</a>*/}
-        {/*<a href="/strategy" className="menu-header-item" onClick={onClose}>*/}
-        {/*  Стратегия*/}
-        {/*</a>*/}
-        {/*<a href="/faq" className="menu-header-item" onClick={onClose}>*/}
-        {/*  FAQ*/}
-        {/*</a>*/}
-        {/*<a href="/partnership" className="menu-header-item" onClick={onClose}>*/}
+        <Link to="/" className="item" onClick={onClose}>
+          Главная
+        </Link>
+        <Link to="/community" className="item" onClick={onClose}>
+          Сообщество
+        </Link>
+        <Link to="/strategy" className="item" onClick={onClose}>
+          Стратегия
+        </Link>
+        <Link to="/faq" className="item" onClick={onClose}>
+          FAQ
+        </Link>
+        {/*<Link to="/partnership" className="item" onClick={onClose}>*/}
         {/*  Партнерство*/}
-        {/*</a>*/}
+        {/*</Link>*/}
 
         <div className="join-button-container">
-          <a
-            href="https://chat.relevanti.org/#/login"
-            className="login-button"
-            onClick={onClose}
-          >
+          {/* <a href="https://chat.relevanty.org/#/login" className="login-button" onClick={onClose}>
             Вход
-          </a>
-          <a href="/#join" className="join-button" onClick={onClose}>
-            Вступить
-          </a>
+          </a> */}
+          <Link to="/apply" className="join-button" onClick={onClose}>
+            Познакомиться с нами
+          </Link>
         </div>
       </nav>
     </div>

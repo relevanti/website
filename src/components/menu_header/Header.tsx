@@ -1,5 +1,7 @@
+import * as React from "react"
+import { useEffect, useState } from "react"
+
 import useIsMobile from "@/hooks/useIsMobile"
-import React, { useEffect, useState } from "react"
 
 import ThinHeader from "./ThinHeader"
 import WideHeader from "./WideHeader"
@@ -12,7 +14,7 @@ const Header: React.FC = () => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY
       const firstSectionHeight = window.innerHeight
-      setIsScrolled(scrollPosition > firstSectionHeight / 2)
+      setIsScrolled(scrollPosition > firstSectionHeight * 0.3)
     }
 
     window.addEventListener("scroll", handleScroll)
@@ -24,11 +26,7 @@ const Header: React.FC = () => {
 
   return (
     <>
-      {isMobile ? (
-        <ThinHeader isScrolled={isScrolled} />
-      ) : (
-        <WideHeader isScrolled={isScrolled} />
-      )}
+      {isMobile ? <ThinHeader isScrolled={isScrolled} /> : <WideHeader isScrolled={isScrolled} />}
     </>
   )
 }

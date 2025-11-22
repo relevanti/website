@@ -1,7 +1,10 @@
-import "./WideHeader.css"
+import * as React from "react"
+
+import { Link } from "@tanstack/react-router"
 
 import HorizontalLogo from "@/components/horizontal_logo/HorizontalLogo"
-import React from "react"
+
+import "./WideHeader.css"
 
 interface WideHeaderProps {
   isScrolled: boolean
@@ -14,29 +17,36 @@ const WideHeader: React.FC<WideHeaderProps> = ({ isScrolled }) => {
         <HorizontalLogo expand={false} size={54} />
       </div>
       <nav className="center">
-        {/*<a href="/" className="item">*/}
-        {/*  Главная*/}
-        {/*</a>*/}
-        {/*<a href="/community" className="item">*/}
-        {/*  Сообщество*/}
-        {/*</a>*/}
-        {/*<a href="/strategy" className="item">*/}
-        {/*  Стратегия*/}
-        {/*</a>*/}
-        {/*<a href="/faq" className="item">*/}
-        {/*  FAQ*/}
-        {/*</a>*/}
+        <Link to="/" className="item" activeProps={{ className: "item active" }}>
+          Главная
+        </Link>
+        <Link to="/community" className="item" activeProps={{ className: "item active" }}>
+          Сообщество
+        </Link>
+
+        <Link to="/strategy" className="item" activeProps={{ className: "item active" }}>
+          Стратегия
+        </Link>
+        <Link to="/faq" className="item" activeProps={{ className: "item active" }}>
+          Вопросы
+        </Link>
+        {/* <Link to="/strategy" className="item">
+          Стратегия
+        </Link>
+        <Link to="/faq" className="item">
+          FAQ
+        </Link> */}
       </nav>
       <nav className="right">
-        {/*<a href="/partnership" className="item">*/}
+        {/*<Link to="/partnership" className="item">*/}
         {/*  Партнерство*/}
-        {/*</a>*/}
-        <a href="/#join" className="join-button">
-          Вступить
-        </a>
-        <a href="https://chat.relevanti.org/#/login" className="item">
+        {/*</Link>*/}
+        <Link to="/apply" className="join-button" activeProps={{ className: "join-button active" }}>
+          Познакомиться с нами
+        </Link>
+        {/* <a href="https://chat.relevanty.org/#/login" className="item">
           Вход
-        </a>
+        </a> */}
       </nav>
     </header>
   )
