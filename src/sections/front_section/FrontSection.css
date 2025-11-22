@@ -11,14 +11,7 @@
     position: relative;
     overflow: hidden;
 }
-@media (max-width: 768px) {
-    .front-section {
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-color: #000;
-    }
-}
+
 .front-section::before {
     content: "";
     position: absolute;
