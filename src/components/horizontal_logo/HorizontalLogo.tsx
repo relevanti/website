@@ -1,6 +1,6 @@
-import "./HorizontalLogo.css"
+import * as React from "react"
 
-import React from "react"
+import "./HorizontalLogo.css"
 
 interface HorizontalLogoProps {
   expand: boolean
@@ -11,12 +11,12 @@ const HorizontalLogo: React.FC<HorizontalLogoProps> = ({ expand, size }) => {
   return (
     <div className={`horizontal-logo ${expand ? "expand" : "tight"}`}>
       <img
-        src="/logo_no_text_no_rays.svg"
+        src="/logo.svg"
         alt="Logo"
         className="logo-image"
         style={{ width: size }}
       />
-      <span className="logo-text">RELEVANTI</span>
+      <span className="logo-text">RELEVANTY</span>
     </div>
   )
 }

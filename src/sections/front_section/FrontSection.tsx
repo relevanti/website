@@ -1,20 +1,20 @@
-import "./FrontSection.css"
+import * as React from "react"
 
-import React from "react"
+import "./FrontSection.css"
 
 const FrontSection: React.FC = () => {
   return (
     <section className="front-section">
       <div className="content">
-        <img src="/logo_no_text.svg" alt="Logo" className="logo-image" />
-        <p className="community-title">RELEVANTI</p>
+        <img src="/logo.svg" alt="Logo" className="logo-image" />
+        <p className="community-title">RELEVANTY</p>
         <p className="description">
-          Клуб людей, вместе стремящихся <br /> прожить невероятную жизнь
+          Сообщество людей, вместе стремящихся <br /> прожить невероятную жизнь
         </p>
-        <a href="/#join" className="join-button">
-          Вступить
+        <a href="/apply" className="join-button">
+          Познакомиться с нами
         </a>
-        <p className="main-points">финансы • здоровье • сообщество</p>
+        <p className="main-points">капитал • долголетие • надежные люди рядом</p>
       </div>
     </section>
   )
