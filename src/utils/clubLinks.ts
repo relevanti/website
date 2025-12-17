@@ -1,6 +1,6 @@
 // src/lib/clubLinks.ts
 export enum ClubLinks {
-  lita = "https://t.me/eramire",
+  lita = "https://t.me/leramire",
   luna = "https://t.me/zhaniyazd",
 }
 
